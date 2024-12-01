@@ -42,7 +42,7 @@ const Navbar = () => {
               to="/contact"
               className="text-white hover:text-yellow-300 transition duration-300"
             >
-              Contact
+              Get In Touch
             </Link>
           </div>
 
