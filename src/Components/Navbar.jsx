@@ -9,38 +9,40 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-sm ">
+    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-white text-3xl  font-space ">Arkoverse </h1>
+            <h1 className="text-white text-3xl font-space">Arkoverse</h1>
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex space-x-8  font-space">
+          <div className="hidden md:flex space-x-8 font-space">
             <Link
               to="/"
-              className="text-white hover:text-yellow-300 transition duration-300"
+              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               Home
             </Link>
 
             <Link
               to="/projects"
-              className="text-white hover:text-yellow-300 transition duration-300"
+              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               Projects
             </Link>
+
             <Link
               to="/about"
-              className="text-white hover:text-yellow-300 transition duration-300"
+              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               About
             </Link>
+
             <Link
               to="/contact"
-              className="text-white hover:text-yellow-300 transition duration-300"
+              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               Get In Touch
             </Link>
@@ -82,28 +84,28 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={toggleMenu}
-            className="block text-white hover:text-yellow-300 transition duration-300"
+            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
           >
             Home
           </Link>
           <Link
             to="/about"
             onClick={toggleMenu}
-            className="block text-white hover:text-yellow-300 transition duration-300"
+            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
           >
             About
           </Link>
           <Link
             to="/projects"
             onClick={toggleMenu}
-            className="block text-white hover:text-yellow-300 transition duration-300"
+            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
           >
             Projects
           </Link>
           <Link
             to="/contact"
             onClick={toggleMenu}
-            className="block text-white hover:text-yellow-300 transition duration-300"
+            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
           >
             Contact
           </Link>

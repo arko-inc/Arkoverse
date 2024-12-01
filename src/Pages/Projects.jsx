@@ -33,7 +33,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white py-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl font-extrabold mb-8">My Projects 🚀</h2>
         <p className="text-lg mb-12">
@@ -45,7 +45,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="bg-black border-white border-[2px]   p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               <img
                 src={project.image}
