@@ -25,17 +25,18 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link
-              to="/about"
-              className="text-white hover:text-yellow-300 transition duration-300"
-            >
-              About
-            </Link>
+
             <Link
               to="/projects"
               className="text-white hover:text-yellow-300 transition duration-300"
             >
               Projects
+            </Link>
+            <Link
+              to="/about"
+              className="text-white hover:text-yellow-300 transition duration-300"
+            >
+              About
             </Link>
             <Link
               to="/contact"
