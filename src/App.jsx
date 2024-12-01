@@ -23,7 +23,7 @@ const PageLoaderWrapper = () => {
   useEffect(() => {
     // Trigger loading animation on route change
     setIsLoading(true);
-    const timer = setTimeout(() => setIsLoading(false), 1000); // Adjust duration as needed
+    const timer = setTimeout(() => setIsLoading(false), 2000); // Adjust duration as needed
 
     return () => clearTimeout(timer); // Cleanup on unmount
   }, [location]);
