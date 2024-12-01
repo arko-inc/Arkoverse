@@ -14,16 +14,18 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white flex flex-col justify-center items-center h-full">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">
-          Welcome to Arkoverse 🌌
+        <h1 className="text-5xl md:text-7xl mb-4 font-space">
+          Welcome <br/>
+           to 
+           <br />Arkoverse 
         </h1>
-        <p className="text-lg md:text-2xl max-w-2xl mx-auto mb-8">
+        <p className="text-lg md:text-2xl max-w-2xl mx-auto mb-8 font-space">
           A universe of innovative ideas and limitless possibilities, crafted by
-          Arko. 🚀✨
+          Arko. 
         </p>
         <a
           href="#projects"
-          className="px-6 py-3  hover:bg-gray-100 backdrop-blur-md bg-white/5  shadow-lg  text-white hover:text-black text-lg font-semibold rounded-md transition duration-300"
+          className="px-6 py-3  hover:bg-gray-100 backdrop-blur-md bg-white/5  shadow-lg  text-white hover:text-black text-lg font-space rounded-md transition duration-300 "
         >
           Explore My Projects
         </a>

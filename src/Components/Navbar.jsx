@@ -9,16 +9,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur- ">
+    <nav className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-sm ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-white text-xl font-bold font-space">Arkoverse </h1>
+            <h1 className="text-white text-3xl  font-space ">Arkoverse </h1>
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8  font-space">
             <Link
               to="/"
               className="text-white hover:text-yellow-300 transition duration-300"
