@@ -1,3 +1,5 @@
+
+
 .star {
   transition: transform 0.2s;
 }
@@ -26,3 +28,29 @@
 
 
 
+.fade-in {
+  opacity: 0;
+  transform: scale(0.8) rotate(5deg); /* Start with a smaller and slightly rotated state */
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Ease-out morph effect */
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: scale(1) rotate(0); /* Full size and aligned */
+}
+
+/* For modern web browsers */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 0, 61); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* Thickness of the scrollbar */
+  scrollbar-color: violet transparent; /* Color of the scrollbar thumb and track */
+}

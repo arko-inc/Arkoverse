@@ -18,31 +18,28 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex space-x-8 font-space">
+          <div className="hidden md:flex space-x-8 font-space ml-auto">
             <Link
               to="/"
-              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+              className="text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               Home
             </Link>
-
             <Link
               to="/projects"
-              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+              className="text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               Projects
             </Link>
-
             <Link
               to="/about"
-              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+              className="text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               About
             </Link>
-
             <Link
               to="/contact"
-              className="text-white relative  transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+              className="text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
             >
               Get In Touch
             </Link>
@@ -54,21 +51,12 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="text-white focus:outline-none"
             >
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
+              {/* Hamburger or Cross Image */}
+              <img
+                src={isMobileMenuOpen ? "/cross.svg" : "/hamburger.svg"}
+                alt="Menu Icon"
+                className={`h-6 w-6 transform transition-transform duration-300 ${isMobileMenuOpen ? "rotate-90" : ""}`} // Rotation effect for cross
+              />
             </button>
           </div>
         </div>
@@ -76,36 +64,34 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={`${
-            isMobileMenuOpen ? "block" : "hidden"
-          } md:hidden bg-transparent bg-opacity-80 p-4 space-y-4 absolute top-16 left-0 right-0 z-10 rounded-b-lg shadow-lg transform transition-transform duration-500 ease-in-out ${
-            isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
-          }`}
+            isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          } md:hidden bg-transparent bg-opacity-80 p-4 space-y-4 absolute top-16 right-0 left-0 z-10 rounded-b-lg shadow-lg transition-transform duration-500 ease-in-out`}
         >
           <Link
             to="/"
             onClick={toggleMenu}
-            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+            className="block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-al text-right"
           >
             Home
           </Link>
           <Link
             to="/about"
             onClick={toggleMenu}
-            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+            className="block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right"
           >
             About
           </Link>
           <Link
             to="/projects"
             onClick={toggleMenu}
-            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+            className="block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right"
           >
             Projects
           </Link>
           <Link
             to="/contact"
             onClick={toggleMenu}
-            className="block text-white relative  transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all"
+            className="block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right"
           >
             Contact
           </Link>

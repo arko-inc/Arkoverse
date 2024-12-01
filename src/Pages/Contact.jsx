@@ -27,6 +27,7 @@ const Contact = () => {
   };
 
   return (
+  <>
     <div className="min-h-screen bg-gray-900 text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-extrabold mb-6">Contact Me 🌠</h2>
@@ -133,6 +134,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+  </>
   );
 };
 
