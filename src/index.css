@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In src/index.css or your global CSS file */
+@font-face {
+  font-family: 'TESLA';
+  src: url('/TESLA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'space';
+  src: url('/space.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
