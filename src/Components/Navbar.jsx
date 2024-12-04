@@ -83,35 +83,35 @@ const Navbar = () => {
               <Link
                 to="/"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right ${isActive("/") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/") ? "after:w-full" : ""}`}
               >
                 Home
               </Link>
               <Link
                 to="/about"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right ${isActive("/about") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/about") ? "after:w-full" : ""}`}
               >
                 About
               </Link>
               <Link
                 to="/projects"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right ${isActive("/projects") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/projects") ? "after:w-full" : ""}`}
               >
                 Projects
               </Link>
               <Link
                 to="/resume"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right ${isActive("/resume") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/resume") ? "after:w-full" : ""}`}
               >
                 My Resume
               </Link>
               <Link
                 to="/contact"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right ${isActive("/contact") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/contact") ? "after:w-full" : ""}`}
               >
                 Get In Touch
               </Link>

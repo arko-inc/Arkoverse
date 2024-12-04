@@ -1,8 +1,5 @@
 
 
-body{
-  overflow-x: hidden;
-}
 .star {
   transition: transform 0.2s;
 }

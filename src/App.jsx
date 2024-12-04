@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false); // Simulate a loading delay
-    }, 100); // Adjust the delay as needed
+    }, 1500); // Adjust the delay as needed
 
     return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
