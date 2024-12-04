@@ -29,11 +29,11 @@ const AboutMe = () => {
         </div>
       </div>
 
-      {/* Skills Section */}
+      {/* Skills Section
       <div className="mb-16">
         <h2 className="text-3xl text-white mb-6">My Skills 💡</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {["React", "TailwindCSS", "JavaScript", "HTML & CSS", "Python", "Space Engineering", "AI Development", "CubeSat Design"].map(
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 text-base ">
+          {["React", "JavaScript", "HTML & CSS", "Python", "Space Engineering", "AI Development", "CubeSat Design"].map(
             (skill, index) => (
               <div
                 key={index}
@@ -44,7 +44,7 @@ const AboutMe = () => {
             )
           )}
         </div>
-      </div>
+      </div> */}
 
       {/* Timeline Section */}
       <div className="mb-16">
