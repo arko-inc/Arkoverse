@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Loading from "./Components/Loading";
 import Footer from "./Components/Footer";
+import Resume from "./Pages/Resume";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +53,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Image" element={<Image/>}/>
+        <Route path="/resume" element={<Resume/>}/>
       </Routes>
       <Footer/>
     </Router>

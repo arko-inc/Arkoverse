@@ -3,7 +3,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col items-center px-6">
+    <div className="min-h-screen  bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col items-center px-6">
       {/* Hero Section */}
       <div className="w-full max-w-4xl text-center py-12">
         <h1 className="text-5xl font-extrabold text-purple-400 mb-4">

@@ -78,7 +78,7 @@ const Projects = () => {
                 <p className="text-gray-400 mb-4 font-nasa">{project.description}</p>
                 <a
                   href={project.link}
-                  className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-orange-600 to-orange-700 text-white hover:from-orange-700 hover:to-orange-600 transition duration-300"
+                  className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-red-600 to-indigo-600 text-white hover:from-indigo-700 hover:to-red-600 transition duration-300 focon"
                 >
                   View Project
                 </a>

@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const AboutMe = () => {
   return (
     <>
-    <section className="bg-black text-gray-300 font-sans min-h-screen px-8  py-12 md:px-20 lg:px-32">
+    <section className="bg-black text-gray-300  min-h-screen px-8  py-12 md:px-20 lg:px-32 font-conthrax">
       {/* Hero Section */}
       <div className="relative flex flex-col md:flex-row items-center justify-center gap-12 mb-16 mt-10">
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl lg:text-6xl font-bold text-white animate-pulse leading-tight">
+          <h1 className="text-4xl lg:text-6xl font-bold text-white animate-pulse leading-tight font-conthrax">
             About <span className="text-indigo-600">Me</span>
           </h1>
           <p className="text-lg mt-4 text-gray-400">

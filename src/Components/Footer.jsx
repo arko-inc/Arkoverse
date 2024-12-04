@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-300 py-10 px-6">
+    <footer className="bg-black text-gray-300 py-10 px-6 font-nasa">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
@@ -18,22 +18,22 @@ const Footer = () => {
           <h3 className="text-xl font-bold text-purple-400 mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#about" className="hover:text-purple-400 transition">
-                About
+              <a href="/aboutme" className="hover:text-purple-400 transition">
+                About Me
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-purple-400 transition">
+              <a href="/services" className="hover:text-purple-400 transition">
                 Services
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="hover:text-purple-400 transition">
+              <a href="/portfolio" className="hover:text-purple-400 transition">
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-purple-400 transition">
+              <a href="/contact" className="hover:text-purple-400 transition">
                 Contact
               </a>
             </li>
