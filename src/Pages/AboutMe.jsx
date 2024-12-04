@@ -22,7 +22,7 @@ const AboutMe = () => {
         </div>
         <div className="md:w-1/2">
           <img
-            src="src/assets/me.jpeg"
+            src="https://i.imghippo.com/files/ZqW1714sY.jpeg"
             alt="Arko's Portrait"
             className="rounded-full w-72 h-72 md:w-96 md:h-96 shadow-xl hover:scale-105 transform transition duration-500"
           />
