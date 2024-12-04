@@ -1,67 +1,88 @@
 import React from "react";
 
-const Projects = () => {
-  const projects = [
-    {
-      title: "Reusable Rocket Engine",
-      description:
-        "A project focused on designing a reusable rocket engine that can send payloads to orbit at a lower cost. The aim is to make space travel more sustainable and affordable.",
-      image: "",
-      link: "#",
-    },
-    {
-      title: "CubeSat Launch System",
-      description:
-        "Developing a cost-effective CubeSat launch system, focusing on making small-scale rockets for deploying nanosatellites to orbit.",
-      image: "",
-      link: "#",
-    },
-    {
-      title: "AI-Driven Space Platform",
-      description:
-        "An AI-based system for autonomous space operations, which will handle everything from satellite navigation to resource management on Mars and the Moon.",
-      image: "",
-      link: "#",
-    },
-    {
-      title: "Interplanetary Fuel System",
-      description:
-        "A concept for transporting fuel between planets using a tether method, aimed at making space exploration more feasible and efficient by reducing fuel transport costs.",
-      image: "",
-      link: "#",
-    },
-  ];
+const projects = [
+  {
+    title: "Project 1",
+    description: "A brief description of Project 1",
+    imageUrl: "https://via.placeholder.com/300",
+    link: "/project1",
+  },
+  {
+    title: "Project 2",
+    description: "A brief description of Project 2",
+    imageUrl: "https://via.placeholder.com/300",
+    link: "/project2",
+  },
+  {
+    title: "Project 3",
+    description: "A brief description of Project 3",
+    imageUrl: "https://via.placeholder.com/300",
+    link: "/project3",
+  },
+  {
+    title: "Project 4",
+    description: "A brief description of Project 4",
+    imageUrl: "https://via.placeholder.com/300",
+    link: "/project4",
+  },
+  {
+    title: "Project 5",
+    description: "A brief description of Project 5",
+    imageUrl: "https://via.placeholder.com/300",
+    link: "/project5",
+  },
+  {
+    title: "Project 6",
+    description: "A brief description of Project 6",
+    imageUrl: "https://via.placeholder.com/300",
+    link: "/project6",
+  },
+];
 
+const Projects = () => {
   return (
-    <div className="min-h-screen bg-black text-white py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-extrabold mb-8">My Projects 🚀</h2>
-        <p className="text-lg mb-12">
-          Here's a selection of some of the projects I've worked on. Each one represents my passion for space exploration, engineering, and technology. Explore below to see how I'm working to shape the future! 🌠
-        </p>
-        
-        {/* Project List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div
+      className="relative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 h-max"
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1630694093867-4b947d812bf0?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      }}
+    >
+      {/* Darker overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+      {/* Content */}
+      <div className="relative z-10 pt-16 md:pt-20">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-pulse font-conthrax">
+            My Projects
+          </h1>
+          <p className="text-lg sm:text-xl text-gray-400 font-nasa">
+            A showcase of my work and creations
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-black border-white border-[2px]   p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="bg-gray-800 bg-opacity-80 backdrop-blur-lg rounded-xl overflow-hidden shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl"
             >
               <img
-                src={project.image}
+                className="w-full h-48 object-cover"
+                src={project.imageUrl}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-md mb-6"
               />
-              <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-              <p className="text-lg mb-4">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-yellow-400 hover:text-yellow-500 font-semibold transition duration-300"
-              >
-                View Project →
-              </a>
+              <div className="p-5">
+                <h2 className="text-2xl font-bold mb-2 font-nasa">{project.title}</h2>
+                <p className="text-gray-400 mb-4 font-nasa">{project.description}</p>
+                <a
+                  href={project.link}
+                  className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-orange-600 to-orange-700 text-white hover:from-orange-700 hover:to-orange-600 transition duration-300"
+                >
+                  View Project
+                </a>
+              </div>
             </div>
           ))}
         </div>

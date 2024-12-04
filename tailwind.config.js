@@ -9,6 +9,8 @@ export default {
       fontFamily: {
         tesla: ['TESLA', 'sans-serif'],
         space:['space', 'sans-serif'],
+        conthrax:['conthrax', 'sans-serif'],
+        nasa: ['NASA', 'sans-serif'],
       },
     },
   },
