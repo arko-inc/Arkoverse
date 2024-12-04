@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import About from "./Pages/About";
+import AboutMe from "./Pages/AboutMe";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Loading from "./Components/Loading";
+import Footer from "./Components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,11 +48,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Image" element={<Image/>}/>
       </Routes>
+      <Footer/>
     </Router>
   );
 }
