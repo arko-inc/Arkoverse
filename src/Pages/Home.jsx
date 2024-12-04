@@ -10,8 +10,7 @@ const Home = () => {
     <>
     
     <HeroSection/>
-    <AboutMe/>
-    <Projects/>
+   
 
    
     </>
