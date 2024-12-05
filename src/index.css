@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,4 +50,92 @@ body {
 pre:hover {
   background-color: #374151;
   transform: scale(1.05);
+}
+
+/* index.css */
+
+/* Existing CSS */
+
+/* Timeline CSS */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 40px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: calc(100% - 40px); /* Adjust height to fit items */
+  background-color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px; /* Adjust position to center the line correctly */
+}
+
+.timeline-item {
+  width: 80%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: calc(100% + 20px); /* Extend height to connect with next dot */
+  background-color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px; /* Start line from below the dot */
+  z-index: -1; /* Ensure it's behind the timeline item */
+}
+
+.timeline-item:first-child::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 20px; /* Short segment above the first item */
+  background-color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  z-index: -1;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.timeline-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.timeline-item h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.timeline-item p {
+  margin: 5px 0 0;
+  color: #b0b0b0;
 }

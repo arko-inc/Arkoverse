@@ -45,7 +45,7 @@
 
 /* Customize the scrollbar thumb (the part that you drag) */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, rgb(58, 0, 167), rgb(69, 0, 118));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(214, 214, 215));
   border-radius: 10px;
 }
 
@@ -57,5 +57,5 @@
 
 /* Optional: Add hover effect for the scrollbar thumb */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, rgb(60, 0, 144), rgb(1, 49, 154));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(233, 233, 233));
 }

@@ -3,37 +3,37 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-10 px-6 font-nasa">
+    <footer className="bg-black text-gray-300 py-10 px-6 font-mont">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
-          <h3 className="text-xl font-bold text-purple-400 mb-4">About Us</h3>
+          <h3 className="text-xl font-bold text-gray-100 mb-4">About Us</h3>
           <p className="text-sm leading-relaxed">
-            Welcome to our universe 🌌, where ideas turn into reality. Join us on our journey to innovate, explore, and create amazing things.
+            Welcome to our universe , where ideas turn into reality. Join us on our journey to innovate, explore, and create amazing things.
           </p>
         </div>
 
         {/* Links Section */}
         <div>
-          <h3 className="text-xl font-bold text-purple-400 mb-4">Quick Links</h3>
+          <h3 className="text-xl font-bold text-gray-100 mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link to="/aboutme" className="hover:text-purple-400 transition">
+              <Link to="/aboutme" className=" hover:text-gray-100 transition">
                 About Me
               </Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-purple-400 transition">
+              <Link to="/services" className=" hover:text-gray-100 transition">
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/portfolio" className="hover:text-purple-400 transition">
+              <Link to="/portfolio" className=" hover:text-gray-100 transition">
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-purple-400 transition">
+              <Link to="/contact" className=" hover:text-gray-100 transition">
                 Contact
               </Link>
             </li>
@@ -42,7 +42,7 @@ const Footer = () => {
 
         {/* Social Section */}
         <div>
-          <h3 className="text-xl font-bold text-purple-400 mb-4">Connect with Us</h3>
+          <h3 className="text-xl font-bold text-gray-100 mb-4">Connect with Us</h3>
           <p className="text-sm leading-relaxed mb-4">
             Follow us on social media for updates, insights, and exclusive content.
           </p>
@@ -52,7 +52,7 @@ const Footer = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-purple-400 transition"
+              className="text-gray-400  hover:text-gray-100 transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const Footer = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-purple-400 transition"
+              className="text-gray-400  hover:text-gray-100 transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

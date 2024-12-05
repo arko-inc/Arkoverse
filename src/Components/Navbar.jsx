@@ -21,11 +21,11 @@ const Navbar = () => {
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <h1 className="text-white text-2xl font-space">Arkoverse</h1>
+                <h1 className="text-white text-2xl font-mont">Arkoverse</h1>
               </div>
 
               {/* Desktop Navigation Links */}
-              <div className="hidden md:flex space-x-8 font-space ml-auto">
+              <div className="hidden md:flex space-x-8 font-mont ml-auto">
                 <Link
                   to="/"
                   className={`text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all ${isActive("/") ? "after:w-full" : ""}`}
@@ -83,35 +83,35 @@ const Navbar = () => {
               <Link
                 to="/"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-mont ${isActive("/") ? "after:w-full" : ""}`}
               >
                 Home
               </Link>
               <Link
                 to="/aboutme"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/aboutme") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-mont ${isActive("/aboutme") ? "after:w-full" : ""}`}
               >
                 About Me
               </Link>
               <Link
                 to="/projects"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/projects") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-mont ${isActive("/projects") ? "after:w-full" : ""}`}
               >
                 Projects
               </Link>
               <Link
                 to="/resume"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/resume") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-mont ${isActive("/resume") ? "after:w-full" : ""}`}
               >
                 My Resume
               </Link>
               <Link
                 to="/contact"
                 onClick={toggleMenu}
-                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-nasa ${isActive("/contact") ? "after:w-full" : ""}`}
+                className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-mont ${isActive("/contact") ? "after:w-full" : ""}`}
               >
                 Get In Touch
               </Link>

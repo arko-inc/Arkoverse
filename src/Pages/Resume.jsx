@@ -3,11 +3,11 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="bg-black text-gray-300 min-h-screen py-10 font-nasa">
+    <div className="bg-black text-gray-300 min-h-screen py-10 font-mont">
       <div className="max-w-6xl mx-auto px-6 mt-10">
         {/* Header Section */}
         <header className="text-center mb-10">
-          <h1 className="text-4xl font-extrabold text-purple-400 font-conthrax">Arko's Resume</h1>
+          <h1 className="text-4xl font-extrabold text-slate-400 font-conthrax">Arko's Resume</h1>
           <p className="mt-2 text-xl text-gray-500">
             Passionate about aerospace engineering, AI, and space exploration 
           </p>
@@ -15,7 +15,7 @@ const Resume = () => {
 
         {/* Experience Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6">Experience</h2>
+          <h2 className="text-3xl font-bold text-slate-400 mb-6">Experience</h2>
           <div className="space-y-8">
             {/* Job 1 */}
             <div className="flex justify-between items-center">
@@ -35,7 +35,7 @@ const Resume = () => {
 
         {/* Education Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6">Education</h2>
+          <h2 className="text-3xl font-bold text-slate-400 mb-6">Education</h2>
           <div className="space-y-8">
             {/* Degree 1 */}
             <div className="flex justify-between items-center">
@@ -50,22 +50,22 @@ const Resume = () => {
 
         {/* Skills Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6">Skills</h2>
+          <h2 className="text-3xl font-bold text-slate-400 mb-6">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-purple-400">React</h4>
+              <h4 className="text-xl font-semibold text-slate-400">React</h4>
               <p className="text-sm text-gray-500">Building modern web apps with React</p>
             </div>
             <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-purple-400">Python</h4>
+              <h4 className="text-xl font-semibold text-slate-400">Python</h4>
               <p className="text-sm text-gray-500">Data analysis, automation, and machine learning</p>
             </div>
             <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-purple-400">JavaScript</h4>
+              <h4 className="text-xl font-semibold text-slate-400">JavaScript</h4>
               <p className="text-sm text-gray-500">Frontend and backend development</p>
             </div>
             <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-purple-400">Space Engineering</h4>
+              <h4 className="text-xl font-semibold text-slate-400">Space Engineering</h4>
               <p className="text-sm text-gray-500">Designing and testing aerospace systems</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Resume = () => {
 
         {/* Projects Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6">Projects</h2>
+          <h2 className="text-3xl font-bold text-slate-400 mb-6">Projects</h2>
           <div className="space-y-8">
             {/* Project 1 */}
             <div className="flex justify-between items-center">
@@ -92,12 +92,12 @@ const Resume = () => {
 
         {/* Contact Section */}
         <section className="text-center">
-          <h2 className="text-3xl font-bold text-purple-400 mb-6">Contact</h2>
+          <h2 className="text-3xl font-bold text-slate-400 mb-6">Contact</h2>
           <p className="text-lg text-gray-500">Feel free to get in touch with me! I'm always open to new opportunities and collaborations. 🌟</p>
           <div className="mt-6">
             <a
               href="mailto:arko@example.com"
-              className="text-lg text-purple-400 hover:text-purple-600 transition"
+              className="text-lg text-slate-400 hover:text-slate-600 transition"
             >
               Email: arko@example.com
             </a>
