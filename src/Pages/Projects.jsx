@@ -12,7 +12,7 @@ const projects = [
     title: "Project 2",
     description: "A brief description of Project 2",
     imageUrl: "https://via.placeholder.com/300",
-    link: "/project2",
+    link: "/project1",
   },
   {
     title: "Project 1",

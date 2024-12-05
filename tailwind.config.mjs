@@ -12,6 +12,9 @@ export default {
         conthrax:['conthrax', 'sans-serif'],
         nasa: ['NASA', 'sans-serif'],
       },
+      animation: {
+        pulse: "pulse 2s infinite",
+      },
     },
   },
   plugins: [],

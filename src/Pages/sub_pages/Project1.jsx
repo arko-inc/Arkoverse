@@ -1,53 +1,66 @@
-import React from "react";
+import React from 'react';
 
 const Project1 = () => {
   return (
-    <div className="bg-black text-white min-h-screen font-sciFi">
-      {/* Hero Section */}
-      <header className="relative bg-gradient-to-br from-purple-900 via-black to-gray-900 py-16 px-8 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-widest text-cyan-400 glow">
+    <div className="bg-black text-white min-h-screen p-8">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-6xl  mb-8 hover:text-teal-400 transition duration-500 ease-in-out text-center font-extrabold uppercase tracking-wide">
           Project1
         </h1>
-        <p className="text-lg md:text-2xl mt-4 text-gray-300">
-          Unveiling the Future of Sci-Fi Innovation
-        </p>
-      </header>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* Documentation Section */}
+          <div>
+            <h2 className="text-4xl font-semibold mb-4 hover:text-teal-400 transition duration-500 ease-in-out">Documentation</h2>
+            <p className="text-xl mb-6 leading-relaxed font-light">
+              Welcome to the future of web development with Project1. Dive into a universe of advanced technology and innovative solutions.
+            </p>
+            <p className="text-xl mb-6 leading-relaxed font-light">
+              The project involves various cutting-edge technologies and innovative approaches to problem-solving.
+            </p>
+          </div>
+          {/* Video Section */}
+          <div>
+            <h2 className="text-4xl font-semibold mb-4 hover:text-teal-400 transition duration-500 ease-in-out">Project Video</h2>
+            <video
+              className="w-full rounded-lg shadow-xl mb-6 hover:shadow-2xl transition duration-500 ease-in-out transform hover:scale-105"
+              controls
+              src="https://via.placeholder.com/150" // Replace this URL with your video URL
+            ></video>
+          </div>
+          {/* Script Section */}
+          <div className="md:col-span-2">
+            <h2 className="text-4xl font-semibold mb-4 hover:text-teal-400 transition duration-500 ease-in-out">Project Script</h2>
+            <pre className="bg-gray-800 p-6 rounded-lg shadow-xl text-left max-w-full overflow-auto hover:bg-gray-700 transition duration-500 ease-in-out transform hover:scale-105">
+              <code className="text-sm">
+                {`
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
 
-      {/* Features Section */}
-      <section className="py-16 px-8">
-        <h2 className="text-4xl font-bold text-cyan-400 glow mb-8 text-center">
-          Features
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Feature Card */}
-          {["Quantum Technology", "AI Integration", "Interplanetary Communication"].map(
-            (feature, index) => (
-              <div
-                key={index}
-                className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300"
-              >
-                <h3 className="text-2xl font-semibold text-cyan-300 mb-4">{feature}</h3>
-                <p className="text-gray-400">
-                  Experience cutting-edge advancements in {feature.toLowerCase()}.
-                </p>
-              </div>
-            )
-          )}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+                `}
+              </code>
+            </pre>
+          </div>
+          {/* Information Section */}
+          <div className="md:col-span-2">
+            <h2 className="text-4xl font-semibold mb-4 hover:text-teal-400 transition duration-500 ease-in-out">Project Information</h2>
+            <p className="text-xl mb-4 leading-relaxed font-light">
+              Project1 is designed to demonstrate the seamless integration of front-end and back-end technologies.
+              It incorporates modern UI/UX principles to deliver an engaging user experience.
+            </p>
+            <p className="text-xl mb-4 leading-relaxed font-light">
+              Technologies Used: React, Tailwind CSS, Node.js, Express.js, MongoDB.
+            </p>
+          </div>
         </div>
-      </section>
-
-      {/* Call to Action */}
-      <footer className="bg-gradient-to-t from-gray-900 to-black py-12 px-8 text-center">
-        <h2 className="text-3xl font-bold text-cyan-400 glow mb-6">
-          Ready to Explore?
-        </h2>
-        <p className="text-gray-300 text-lg mb-8">
-          Dive into the sci-fi universe with Project1 today!
-        </p>
-        <button className="px-6 py-3 rounded-md bg-cyan-400 text-black font-bold uppercase hover:bg-cyan-300 transition">
-          Get Started
-        </button>
-      </footer>
+      </div>
     </div>
   );
 };
