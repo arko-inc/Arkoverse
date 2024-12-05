@@ -9,7 +9,7 @@ import Home from "./Pages/Home";
 import Loading from "./Components/Loading";
 import Footer from "./Components/Footer";
 import Resume from "./Pages/Resume";
-import Project1 from "./Pages/sub_pages/Project1";
+import Project1 from "./Pages/sub_pages/Project1"; // Correct import path
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,11 +53,12 @@ function App() {
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/Image" element={<Image/>}/>
-        <Route path="/resume" element={<Resume/>}/>
-        <Route path="/project1" element={<Project1/>}/>
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/project1" element={<Project1 />} />
+        {/* Add a fallback route for 404 */}
+        <Route path="*" element={<div>404 - Page Not Found</div>} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

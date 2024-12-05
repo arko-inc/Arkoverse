@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 
 const projects = [
   {
@@ -14,28 +15,25 @@ const projects = [
     link: "/project2",
   },
   {
-    title: "Project 3",
-    description: "A brief description of Project 3",
+    title: "Project 1",
+    description: "A brief description of Project 1",
     imageUrl: "https://via.placeholder.com/300",
-    link: "/project3",
-  },
-  {
-    title: "Project 4",
-    description: "A brief description of Project 4",
+    link: "/project1",
+  },{
+    title: "Project 1",
+    description: "A brief description of Project 1",
     imageUrl: "https://via.placeholder.com/300",
-    link: "/project4",
-  },
-  {
-    title: "Project 5",
-    description: "A brief description of Project 5",
+    link: "/project1",
+  },{
+    title: "Project 1",
+    description: "A brief description of Project 1",
     imageUrl: "https://via.placeholder.com/300",
-    link: "/project5",
-  },
-  {
-    title: "Project 6",
-    description: "A brief description of Project 6",
+    link: "/project1",
+  },{
+    title: "Project 1",
+    description: "A brief description of Project 1",
     imageUrl: "https://via.placeholder.com/300",
-    link: "/project6",
+    link: "/project1",
   },
 ];
 
@@ -76,12 +74,12 @@ const Projects = () => {
               <div className="p-5">
                 <h2 className="text-2xl font-bold mb-2 font-nasa">{project.title}</h2>
                 <p className="text-gray-400 mb-4 font-nasa">{project.description}</p>
-                <a
-                  href={project.link}
+                <Link
+                  to={project.link}
                   className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-red-600 to-indigo-600 text-white hover:from-indigo-700 hover:to-red-600 transition duration-300 focon"
                 >
                   View Project
-                </a>
+                </Link>
               </div>
             </div>
           ))}
