@@ -9,11 +9,11 @@ const HeroSection = () => {
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1630694093867-4b947d812bf0?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-          backgroundAttachment: 'fixed', // Ensures background stays fixed
+          backgroundAttachment: "fixed", // Keeps the background fixed while scrolling
         }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
+        {/* Transparent Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/50 via-black/50 to-gray-900/60 z-10"></div>
 
         {/* Content */}
         <div className="relative z-20 p-5 max-w-2xl text-right text-white font-conthrax">
@@ -33,8 +33,6 @@ const HeroSection = () => {
           </Link>
         </div>
       </section>
-
-    
     </>
   );
 };

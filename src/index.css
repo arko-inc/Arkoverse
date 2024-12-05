@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 /* In src/index.css or your global CSS file */
+
 @font-face {
   font-family: 'TESLA';
   src: url('/TESLA.woff2') format('woff2');
@@ -34,3 +35,5 @@
 body{
   overflow-x: hidden;
 }
+
+

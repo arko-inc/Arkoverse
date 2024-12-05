@@ -6,8 +6,8 @@ const Contact = () => {
     <div className="min-h-screen  bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col items-center px-6">
       {/* Hero Section */}
       <div className="w-full max-w-4xl text-center py-12">
-        <h1 className="text-5xl font-extrabold text-purple-400 mb-4">
-          Contact Me 🌌
+        <h1 className="text-5xl font-extrabold text-purple-400 mb-4 mt-10">
+          Contact Me 
         </h1>
         <p className="text-lg text-gray-300">
           Have questions, ideas, or just want to chat? Let’s connect and make awesome things happen together. 🚀
@@ -17,7 +17,7 @@ const Contact = () => {
       {/* Contact Form */}
       <div className="w-full max-w-4xl bg-gray-800 rounded-lg shadow-xl p-8 mb-12">
         <h2 className="text-3xl font-bold text-center mb-6 text-purple-300">
-          Send a Message 💌
+          Send a Message 
         </h2>
         <form className="space-y-6">
           <div>
