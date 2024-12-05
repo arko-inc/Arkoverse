@@ -59,3 +59,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(233, 233, 233));
 }
+
+html, body{
+  overflow-x: hidden !important;
+}

@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <h1 className="text-white text-2xl font-mont">Arkoverse</h1>
+                <h1 className="text-white text-2xl font-mont">arkoverse</h1>
               </div>
 
               {/* Desktop Navigation Links */}

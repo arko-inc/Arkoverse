@@ -3,36 +3,36 @@ import { Link } from "react-router-dom"; // Import Link
 
 const projects = [
   {
-    title: "Project 1",
-    description: "A brief description of Project 1",
-    imageUrl: "https://via.placeholder.com/300",
-    link: "/project1",
+    title: "Toddy!",
+    description: "The funniest but coolest robot I have ever made",
+    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    link: "/toddy",
   },
   {
     title: "Project 2",
     description: "A brief description of Project 2",
-    imageUrl: "https://via.placeholder.com/300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
     link: "/project1",
   },
   {
     title: "Project 1",
     description: "A brief description of Project 1",
-    imageUrl: "https://via.placeholder.com/300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
     link: "/project1",
   },{
     title: "Project 1",
     description: "A brief description of Project 1",
-    imageUrl: "https://via.placeholder.com/300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
     link: "/project1",
   },{
     title: "Project 1",
     description: "A brief description of Project 1",
-    imageUrl: "https://via.placeholder.com/300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
     link: "/project1",
   },{
     title: "Project 1",
     description: "A brief description of Project 1",
-    imageUrl: "https://via.placeholder.com/300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
     link: "/project1",
   },
 ];
@@ -47,7 +47,7 @@ const Projects = () => {
       }}
     >
       {/* Darker overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/5 via-black/60 to-gray-900/20 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/30 via-black/60 to-gray-900/20 z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 pt-16 md:pt-20">
@@ -64,7 +64,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#1a1a1a] bg-opacity-20 backdrop-blur-lg  rounded-xl overflow-hidden shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+              className="bg-[#1a1a1a] bg-opacity-10  border-white border-[.5px] backdrop-blur-md  rounded-xl overflow-hidden  transform transition duration-500 hover:scale-105 hover:shadow-md hover:shadow-white"
             >
               <img
                 className="w-full h-48 object-cover"
@@ -76,7 +76,7 @@ const Projects = () => {
                 <p className="text-gray-400 mb-4 font-mont">{project.description}</p>
                 <Link
                   to={project.link}
-                  className="inline-block px-6 py-3 rounded-full bg-gradient-to-r text-black from-gray-50 to-gray-100  hover:from-white hover:to-gray-100 transition duration-300 focon"
+                  className="inline-block px-6 py-3 rounded-full border-[1px] bg-transparent text-white border-white transition duration-300 focon"
                 >
                   View Project
                 </Link>

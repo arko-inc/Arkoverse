@@ -139,3 +139,30 @@ pre:hover {
   margin: 5px 0 0;
   color: #b0b0b0;
 }
+
+/* src/components/ToddyPage.css */
+
+@keyframes hover-effect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  animation: hover-effect 0.3s forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+button:active + .hidden {
+  display: block;
+}
