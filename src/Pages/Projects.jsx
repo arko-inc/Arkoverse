@@ -11,9 +11,9 @@ const projects = [
   
   {
     title: "Toddy!",
-    description: "The funniest but coolest robot I have ever made",
+    description: "The funniest but coolest robot I have ever made1",
     imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
-    link: "/projects/toddy", // Updated link
+    link: "/projects/project1", // Updated link
   },
   {
     title: "Toddy!",
@@ -58,10 +58,10 @@ const Projects = () => {
       {/* Content */}
       <div className="relative z-10 pt-16 md:pt-20">
         <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-pulse font-mont">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-thin mb-4 animate-pulse font-mont">
             My Projects
           </h1>
-          <p className="text-lg sm:text-xl text-gray-100 font-mont">
+          <p className="text-lg sm:text-xl text-gray-100 font-mont font-thin">
             A showcase of my work and creations
           </p>
         </div>
@@ -78,7 +78,7 @@ const Projects = () => {
                   alt={project.title}
                 />
                 <div className="p-5">
-                  <h2 className="text-2xl font-bold mb-2 font-mont">{project.title}</h2>
+                  <h1 className="text-2xl font-thin mb-2 font-mont">{project.title}</h1>
                   <p className="text-gray-400 mb-4 font-mont">{project.description}</p>
                 </div>
               </div>

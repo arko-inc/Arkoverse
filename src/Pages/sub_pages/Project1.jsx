@@ -4,7 +4,7 @@ const Project1 = () => {
   return (
     <div className="bg-black text-white min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-6xl  mb-8 hover:text-teal-400 transition duration-500 ease-in-out text-center font-extrabold uppercase tracking-wide">
+        <h1 className="text-6xl mb-8 hover:text-teal-400 transition duration-500 ease-in-out text-center font-extrabold uppercase tracking-wide">
           Project1
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -21,11 +21,15 @@ const Project1 = () => {
           {/* Video Section */}
           <div>
             <h2 className="text-4xl font-semibold mb-4 hover:text-teal-400 transition duration-500 ease-in-out">Project Video</h2>
-            <video
-              className="w-full rounded-lg shadow-xl mb-6 hover:shadow-2xl transition duration-500 ease-in-out transform hover:scale-105"
-              controls
-              src="https://via.placeholder.com/150" // Replace this URL with your video URL
-            ></video>
+            <iframe
+              className="w-full h-96 rounded-lg shadow-xl mb-6 hover:shadow-2xl transition duration-500 ease-in-out transform hover:scale-105"
+              src="https://www.youtube.com/embed/8sy2XXk_UwQ?si=5XASxxp72VZLyWJX"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
           {/* Script Section */}
           <div className="md:col-span-2">

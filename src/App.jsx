@@ -10,7 +10,8 @@ import Resume from "./Pages/Resume";
 import Project1 from "./Pages/sub_pages/Project1";
 import Toddy from "./Pages/sub_pages/Toddy";
 import AppWrapper from "./AppWrapper";
-
+import './index.css';
+import './App.css';
 function App() {
   return (
     <Router>
