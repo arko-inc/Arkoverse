@@ -7,17 +7,20 @@ const Toddy = () => {
     "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
   ];
   const texts = [
-    "abcdefg......etc",
-    "fdthdfdfngbrsdg....ferfgrt",
-    "lmnopqrstuvw......xyz",
+    "Toddy the super bot",
+    "Toddy the frog astronaut",
+    "Toddy the Explorer",
+    "Toddy the frog astronaut4",
   ];
 
   const headers = [
-    "Header for Image 1",
-    "Header for Image 2",
-    "Header for Image 3",
+    "Toddy",
+    "Toddy",
+    "Toddy",
+    "Toddy4",
   ];
 
   return (
@@ -43,39 +46,72 @@ const Toddy = () => {
 
         {/* Description Section */}
         <section className="px-2 sm:px-5 md:px-10 py-10">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
-            <div className="lg:w-1/2 z-30">
-              <img
-                src="https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200"
-                alt="Toddy"
-                className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 hover:rotate-3 transition-transform duration-500 ease-in-out"
-              />
-            </div>
-            <div className="lg:w-1/2 mt-10 lg:mt-0 relative md:ml-9">
-              <h2 className="text-3xl md:text-4xl font-thin tracking-tight">
-                What is Toddy?
-              </h2>
-              <p className="mt-6 text-base md:text-lg leading-relaxed font-thin">
-                Toddy is a <strong>frog-like rover companion</strong> designed
-                for exploring the surface of <strong>Deimos</strong>, one of
-                Mars’ moons. It will assist the main rover by hopping around and
-                scouting terrain, all while using Deimos' low gravity to its
-                advantage!
-              </p>
-              <p className="mt-6 text-base md:text-lg font-thin">
-                With a top speed of <strong>1 m/s</strong>, Toddy is agile,
-                efficient, and ready to help uncover the mysteries of Deimos,
-                without fear of drifting off into space due to its
-                well-calculated jump speed.
-              </p>
-            </div>
-          </div>
-        </section>
+  <div className="flex flex-col lg:flex-row justify-between items-center">
+    <div className="lg:w-1/2 z-30">
+      <img
+        src="https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200"
+        alt="Toddy"
+        className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 hover:rotate-3 transition-transform duration-500 ease-in-out"
+      />
+    </div>
+    <div className="lg:w-1/2 mt-10 lg:mt-0 relative md:ml-9">
+      <h2 className="text-3xl md:text-4xl font-thin tracking-tight">
+        What is Toddy?
+      </h2>
+      <p className="mt-6 text-base md:text-lg leading-relaxed font-thin text-justify">
+        Toddy is a <strong>frog-like rover companion</strong> designed
+        for exploring the surface of <strong>Deimos</strong>, one of
+        Mars’ moons. It will assist the main rover by hopping around and
+        scouting terrain, all while using Deimos' low gravity to its
+        advantage!
+      </p>
+      <p className="mt-6 text-base md:text-lg font-thin text-justify">
+        With a top speed of <strong>1 m/s</strong>, Toddy is agile,
+        efficient, and ready to help uncover the mysteries of Deimos,
+        without fear of drifting off into space due to its
+        well-calculated jump speed.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section className="px-2 sm:px-5 md:px-10 py-10">
+  <div className="flex flex-col lg:flex-row justify-between items-center">
+    <div className="lg:w-1/2 mt-10 lg:mt-0 relative lg:mr-9">
+      <h2 className="text-3xl md:text-4xl font-thin tracking-tight">
+        What is Toddy?
+      </h2>
+      <p className="mt-6 text-base md:text-lg leading-relaxed font-thin text-justify">
+        Toddy is a <strong>frog-like rover companion</strong> designed
+        for exploring the surface of <strong>Deimos</strong>, one of
+        Mars’ moons. It will assist the main rover by hopping around and
+        scouting terrain, all while using Deimos' low gravity to its
+        advantage!
+      </p>
+      <p className="mt-6 text-base md:text-lg font-thin text-justify">
+        With a top speed of <strong>1 m/s</strong>, Toddy is agile,
+        efficient, and ready to help uncover the mysteries of Deimos,
+        without fear of drifting off into space due to its
+        well-calculated jump speed.
+      </p>
+    </div>
+    <div className="lg:w-1/2 z-30">
+      <img
+        src="https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200"
+        alt="Toddy"
+        className="w-full h-auto rounded-xl shadow-xl transform hover:scale-105 hover:-rotate-3 transition-transform duration-500 ease-in-out"
+      />
+    </div>
+  </div>
+</section>
+
+
+
 
         {/* Features Section */}
-        <section className="px-2 sm:px-5 md:px-10 py-10 bg-transparent relative font-thin">
+        <section className="px-2 sm:px-5 md:px-10 py-10 bg-transparent relative font-thin text-center">
           <div className="text-center">
-            <h2 className="text-3xl md:text-5xl font-thin tracking-wider animate__animated animate__fadeInDown">
+            <h2 className="text-3xl md:text-5xl font-thin tracking-wider animate__animated animate__fadeInDown text-center">
               Toddy's Features in Action
             </h2>
             <p className="mt-6 md:text-xl tracking-wide">
@@ -85,10 +121,10 @@ const Toddy = () => {
           </div>
 
           {/* Features Cards */}
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
             <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
               <h3 className="text-xl md:text-2xl font-thin">Agile Jumps</h3>
-              <p className="mt-4 text-base md:text-lg leading-relaxed">
+              <p className="mt-4 text-base md:text-md  leading-relaxed ">
                 Toddy uses the low gravity of Deimos to perform controlled,{" "}
                 <strong>efficient jumps</strong> that let it scout the terrain
                 without losing control.
@@ -156,12 +192,12 @@ const Toddy = () => {
             images={images}
             texts={texts}
             headers={headers}
-            title="Toddy in Action"
-            description="Check out some images and videos of Toddy in the field."
+            title="Toddy's gallery"
+            description="Feel free to scroll in carousel about Toddy"
           />{" "}
         </div>
 
-        <div className="mb-16 relative z-10 p-8 rounded-lg  shadow-lg">
+        <div className="mb-16 relative z-10 p-8 rounded-lg  font-thin">
           <h2 className="text-3xl text-white mb-6 text-center">Fun Facts 🌟</h2>
           <ul className="list-none pl-5 space-y-4 text-center">
             <li className="p-4 transform hover:scale-105 transition duration-300">

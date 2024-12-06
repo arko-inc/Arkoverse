@@ -1,9 +1,9 @@
 import React from "react";
-import './Loading.css';
+
 const Loading = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-black">
-      <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-t-white border-b-white border-black"></div>
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-t-white border-b-white border-black"></div>
       <h1 className="text-white text-2xl ml-4 font-nasa">
         Loading
         <span className="loading-container">
@@ -14,6 +14,7 @@ const Loading = () => {
             <div className="spinner-circle bg-[#1a1a1a]"></div>{" "}
             <div className="spinner-circle bg-[#1a1a1a]"></div>{" "}
             <div className="spinner-circle  bg-white"></div>{" "}
+            
           </div>{" "}
         </span>
       </h1>
