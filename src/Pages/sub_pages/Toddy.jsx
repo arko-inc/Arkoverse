@@ -1,5 +1,4 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CarouselWithText from "../../Components/UI/Carouselwithtext";
 
@@ -34,10 +33,10 @@ const Toddy = () => {
 
         {/* Header Section */}
         <header className="py-12 text-center relative">
-          <h1 className="text-5xl font-extrabold tracking-wider animate__animated animate__bounceIn">
+          <h1 className="text-5xl font-thin tracking-wider animate__animated animate__bounceIn">
             Meet Toddy
           </h1>
-          <p className="text-2xl mt-4 tracking-wide">
+          <p className="text-2xl mt-4 tracking-wide font-thin">
             Your froggy rover companion for Deimos exploration.
           </p>
         </header>
@@ -53,17 +52,17 @@ const Toddy = () => {
               />
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 relative md:ml-9">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-thin tracking-tight">
                 What is Toddy?
               </h2>
-              <p className="mt-6 text-base md:text-lg leading-relaxed">
+              <p className="mt-6 text-base md:text-lg leading-relaxed font-thin">
                 Toddy is a <strong>frog-like rover companion</strong> designed
                 for exploring the surface of <strong>Deimos</strong>, one of
                 Mars’ moons. It will assist the main rover by hopping around and
                 scouting terrain, all while using Deimos' low gravity to its
                 advantage!
               </p>
-              <p className="mt-6 text-base md:text-lg">
+              <p className="mt-6 text-base md:text-lg font-thin">
                 With a top speed of <strong>1 m/s</strong>, Toddy is agile,
                 efficient, and ready to help uncover the mysteries of Deimos,
                 without fear of drifting off into space due to its
