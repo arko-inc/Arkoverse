@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 /* In src/index.css or your global CSS file */
+@layer utilities {
+  .tilt {
+    transition: transform 0.3s ease-in-out;
+    perspective: 1000px;
+  }
+
+  .tilt:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+  }
+}
 
 @font-face {
   font-family: "TESLA";
@@ -165,4 +175,7 @@ button:hover {
 
 button:active + .hidden {
   display: block;
+}
+.custom-carousel .control-dots {
+  bottom: -20px; /* Adjust this value to move the dots lower */
 }

@@ -1,40 +1,46 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom";
 
 const projects = [
   {
     title: "Toddy!",
     description: "The funniest but coolest robot I have ever made",
     imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
-    link: "/toddy",
+    link: "/projects/toddy", // Updated link
+  },
+  
+  {
+    title: "Toddy!",
+    description: "The funniest but coolest robot I have ever made",
+    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    link: "/projects/toddy", // Updated link
   },
   {
-    title: "Project 2",
-    description: "A brief description of Project 2",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
-    link: "/project1",
+    title: "Toddy!",
+    description: "The funniest but coolest robot I have ever made",
+    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    link: "/projects/toddy", // Updated link
   },
   {
-    title: "Project 1",
-    description: "A brief description of Project 1",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
-    link: "/project1",
-  },{
-    title: "Project 1",
-    description: "A brief description of Project 1",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
-    link: "/project1",
-  },{
-    title: "Project 1",
-    description: "A brief description of Project 1",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
-    link: "/project1",
-  },{
-    title: "Project 1",
-    description: "A brief description of Project 1",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg",
-    link: "/project1",
+    title: "Toddy!",
+    description: "The funniest but coolest robot I have ever made",
+    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    link: "/projects/toddy", // Updated link
   },
+  {
+    title: "Toddy!",
+    description: "The funniest but coolest robot I have ever made",
+    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    link: "/projects/toddy", // Updated link
+  },
+  {
+    title: "Toddy!",
+    description: "The funniest but coolest robot I have ever made",
+    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    link: "/projects/toddy", // Updated link
+  },
+  
+  // Add more projects here
 ];
 
 const Projects = () => {
@@ -59,29 +65,24 @@ const Projects = () => {
             A showcase of my work and creations
           </p>
         </div>
-
+      
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-[#1a1a1a] bg-opacity-10  border-white border-[.5px] backdrop-blur-md  rounded-xl overflow-hidden  transform transition duration-500 hover:scale-105 hover:shadow-md hover:shadow-white"
-            >
-              <img
-                className="w-full h-48 object-cover"
-                src={project.imageUrl}
-                alt={project.title}
-              />
-              <div className="p-5">
-                <h2 className="text-2xl font-bold mb-2 font-mont">{project.title}</h2>
-                <p className="text-gray-400 mb-4 font-mont">{project.description}</p>
-                <Link
-                  to={project.link}
-                  className="inline-block px-6 py-3 rounded-full border-[1px] bg-transparent text-white border-white transition duration-300 focon"
-                >
-                  View Project
-                </Link>
+            <Link to={project.link} key={index}>
+              <div
+                className="bg-[#1a1a1a] bg-opacity-10 border-white border-[.5px] backdrop-blur-md rounded-xl overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-md hover:shadow-white"
+              >
+                <img
+                  className="w-full h-48 object-cover"
+                  src={project.imageUrl}
+                  alt={project.title}
+                />
+                <div className="p-5">
+                  <h2 className="text-2xl font-bold mb-2 font-mont">{project.title}</h2>
+                  <p className="text-gray-400 mb-4 font-mont">{project.description}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -20,9 +20,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/toddy" element={<Toddy />} /> {/* Updated path */}
+          <Route path="/projects/project1" element={<Project1 />} /> {/* Example for another project */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/toddy" element={<Toddy />} />
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>
       </AppWrapper>

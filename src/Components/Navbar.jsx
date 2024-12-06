@@ -21,11 +21,11 @@ const Navbar = () => {
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <h1 className="text-white text-2xl font-mont">arkoverse</h1>
+                <h1 className="text-white text-2xl font-mont font-thin">arkoverse</h1>
               </div>
 
               {/* Desktop Navigation Links */}
-              <div className="hidden md:flex space-x-8 font-mont ml-auto">
+              <div className="hidden md:flex space-x-8 font-mont ml-auto font-thin">
                 <Link
                   to="/"
                   className={`text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all ${isActive("/") ? "after:w-full" : ""}`}

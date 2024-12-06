@@ -13,17 +13,17 @@ const HeroSection = () => {
         }}
       >
         {/* Transparent Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/5 via-black/40 to-gray-900/10 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/5 via-black/40 to-gray-900/5 z-10"></div>
 
         {/* Content */}
         <div className="relative z-20 p-5 max-w-2xl text-right text-white font-mont">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-4">
+          <h1 className="text-4xl sm:text-6xl font-thin mb-4">
             Welcome to <br />
             <span className="relative inline-block after:block after:absolute after:right-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all hover:after:w-full">
               Arkoverse
             </span>
           </h1>
-          <p className="text-lg sm:text-xl mb-8 font-mont">
+          <p className="text-lg sm:text-xl mb-8 font-mont font-thin">
             A universe of a dreamer who wants to step on Mars
           </p>
           <Link to="/projects">
