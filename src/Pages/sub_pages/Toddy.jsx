@@ -1,6 +1,6 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import CarouselWithText from "./UI/Carouselwithtext";
+import CarouselWithText from "../../Components/CarouselWithText";
 
 const Toddy = () => {
   const images = [
