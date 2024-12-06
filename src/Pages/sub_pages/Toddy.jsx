@@ -1,6 +1,6 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import CarouselWithText from "../../Components/UI/Carouselwithtext";
+
 
 const Toddy = () => {
   const images = [
@@ -150,17 +150,7 @@ const Toddy = () => {
         </section>
 
         {/* Carousel Section */}
-        <div>
-          {" "}
-          <CarouselWithText
-            images={images}
-            texts={texts}
-            headers={headers}
-            title="Toddy in Action"
-            description="Check out some images and videos of Toddy in the field."
-          />{" "}
-        </div>
-
+       
         <div className="mb-16 relative z-10 p-8 rounded-lg  shadow-lg">
           <h2 className="text-3xl text-white mb-6 text-center">Fun Facts 🌟</h2>
           <ul className="list-none pl-5 space-y-4 text-center">
