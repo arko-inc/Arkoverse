@@ -1,4 +1,3 @@
-// Resume.js
 import React from "react";
 
 const Resume = () => {
@@ -13,7 +12,7 @@ const Resume = () => {
         <header className="text-center mb-10">
           <h1 className="text-4xl font-extrabold text-white font-mont">Arko's Resume</h1>
           <p className="mt-2 text-xl text-white">
-            Passionate about aerospace engineering, AI, and space exploration 
+            Aspiring aerospace engineer, passionate about space exploration and AI technology.
           </p>
         </header>
 
@@ -24,15 +23,15 @@ const Resume = () => {
             {/* Job 1 */}
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="text-2xl font-semibold text-white">Web dev & Student</h3>
-                <p className="text-sm text-white">XYZ Company | June 2023 - Present</p>
+                <h3 className="text-2xl font-semibold text-white">Web Development & Student</h3>
+                <p className="text-sm text-white">Freelancer | June 2023 - Present</p>
               </div>
               <div className="text-sm text-gray-400">Remote</div>
             </div>
             <ul className="list-disc pl-6 mt-4">
-              <li>Developed and maintained web applications using React, Node.js, and MongoDB</li>
-              <li>Worked in an agile team environment, collaborating with cross-functional teams</li>
-              <li>Contributed to the integration of REST APIs for real-time data updates</li>
+              <li>Developed and maintained web applications using React, JavaScript, and CSS</li>
+              <li>Collaborated on multiple freelance projects for various clients</li>
+              <li>Worked with APIs and data to create dynamic web applications</li>
             </ul>
           </div>
         </section>
@@ -44,10 +43,10 @@ const Resume = () => {
             {/* Degree 1 */}
             <div className="flex justify-between items-center">
               <div>
-                <h3 className="text-2xl font-semibold text-white">SSC Gpa-5</h3>
-                <p className="text-sm text-white">wants to get chance in MIT | Expected Graduation: 2029</p>
+                <h3 className="text-2xl font-semibold text-white">High School Student (SSC)</h3>
+                <p className="text-sm text-white">Bangladesh | Expected Graduation: 2025</p>
               </div>
-              <div className="text-sm text-gray-400">Cambridge, MA</div>
+              <div className="text-sm text-gray-400">Bangladesh</div>
             </div>
           </div>
         </section>
@@ -56,21 +55,21 @@ const Resume = () => {
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-white mb-6">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-white">React</h4>
-              <p className="text-sm text-white">Building modern web apps with React</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h3 className="text-lg font-semibold">React</h3>
+              <p className="text-sm text-gray-400">Building dynamic web applications</p>
             </div>
-            <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-white">Python</h4>
-              <p className="text-sm text-white">Data analysis, automation, and machine learning</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h3 className="text-lg font-semibold">Python</h3>
+              <p className="text-sm text-gray-400">Data science and automation scripts</p>
             </div>
-            <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-white">JavaScript</h4>
-              <p className="text-sm text-white">Frontend and backend development</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h3 className="text-lg font-semibold">AI & Machine Learning</h3>
+              <p className="text-sm text-gray-400">AI-driven projects and problem-solving</p>
             </div>
-            <div className="bg-gray-800 p-4 rounded-md text-center">
-              <h4 className="text-xl font-semibold text-white">Space Engineering</h4>
-              <p className="text-sm text-white">Designing and testing aerospace systems</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h3 className="text-lg font-semibold">CubeSat Design</h3>
+              <p className="text-sm text-gray-400">Design and prototype CubeSats</p>
             </div>
           </div>
         </section>
@@ -78,35 +77,16 @@ const Resume = () => {
         {/* Projects Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-white mb-6">Projects</h2>
-          <div className="space-y-8">
-            {/* Project 1 */}
-            <div className="flex justify-between items-center">
-              <div>
-                <h3 className="text-2xl font-semibold text-white">Interplanetary Social Media Platform</h3>
-                <p className="text-sm text-white">2024 - Ongoing</p>
-              </div>
-              <div className="text-sm text-gray-400">Space & AI</div>
-            </div>
-            <ul className="list-disc pl-6 mt-4">
-              <li>Developing a scalable AI-powered social media platform for Earth and Mars</li>
-              <li>Integrating real-time communication features between Earth and Mars</li>
-            </ul>
-          </div>
+          <ul className="list-disc pl-6 space-y-4">
+            <li><span className="text-white">Developed a rocket prototype as part of my future space agency, Xpace.</span></li>
+            <li><span className="text-white">Created a concept for an interplanetary social media platform.</span></li>
+            <li><span className="text-white">Built AI-driven applications for CubeSat navigation.</span></li>
+          </ul>
         </section>
 
-        {/* Contact Section */}
-        <section className="text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Contact</h2>
-          <p className="text-lg text-white">Feel free to get in touch with me! I'm always open to new opportunities and collaborations. 🌟</p>
-          <div className="mt-6">
-            <a
-              href="mailto:arko@example.com"
-              className="text-lg text-white hover:text-slate-600 transition"
-            >
-              Email: arko@example.com
-            </a>
-          </div>
-        </section>
+        <footer className="text-center py-8 text-gray-400">
+          <p>&copy; 2024 Arko. All rights reserved.</p>
+        </footer>
       </div>
     </div>
   );

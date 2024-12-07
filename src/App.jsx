@@ -6,7 +6,7 @@ import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
-import Resume from "./Pages/Resume";
+
 import Project1 from "./Pages/sub_pages/Project1";
 import Toddy from "./Pages/sub_pages/Toddy";
 import AppWrapper from "./AppWrapper";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/projects/toddy" element={<Toddy />} /> {/* Updated path */}
           <Route path="/projects/project1" element={<Project1 />} /> {/* Example for another project */}
           <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
+       
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>
       </AppWrapper>

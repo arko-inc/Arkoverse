@@ -16,12 +16,12 @@ const Navbar = () => {
   return (
     <>
       <div className="me-10">
-        <nav className="fixed top-0 w-full me-5 z-50 bg-transparent backdrop-blur-md">
+        <nav className="fixed top-0 w-full me-5 z-50 bg-transparent backdrop-blur-md shadow-2xl shadow-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <h1 className="text-white text-2xl font-mont font-thin">arkoverse</h1>
+                <h1 className="text-white text-2xl font-mont font-light">Arkoverse</h1>
               </div>
 
               {/* Desktop Navigation Links */}
@@ -44,12 +44,7 @@ const Navbar = () => {
                 >
                   About Me
                 </Link>
-                <Link
-                  to="/resume"
-                  className={`text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all ${isActive("/resume") ? "after:w-full" : ""}`}
-                >
-                  My Resume
-                </Link>
+              
                 <Link
                   to="/contact"
                   className={`text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all ${isActive("/contact") ? "after:w-full" : ""}`}

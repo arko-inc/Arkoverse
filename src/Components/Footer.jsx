@@ -119,7 +119,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="text-center mt-8 text-sm text-gray-500">
-        © 2024 Your Company. All rights reserved. | Made with ❤️
+      <i className="fa-regular fa-copyright"  style={{color:'#6b7280', }}></i> 2024 Arkoverse. All rights reserved. | Made with ❤️
       </div>
     </footer>
   );
