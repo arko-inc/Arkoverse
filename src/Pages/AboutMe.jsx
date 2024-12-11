@@ -24,7 +24,7 @@ function AboutMe() {
         <div className="relative flex flex-col md:flex-row items-center justify-center gap-12 mb-16 mt-10">
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl lg:text-6xl font-thin text-white animate-pulse leading-tight font-mont">
-              About <span className="text-white font-bold">Me</span>
+              About <span className="text-white font-thin">Me</span>
             </h1>
             <p className="text-lg mt-4 text-white">
               I'm <span className="text-white font-thin thin ">Arko</span>, a high school student, dreamer, innovator, and aspiring aerospace engineer, committed to pushing the boundaries of the possible. Let's journey together into the Arkoverse!
@@ -68,21 +68,22 @@ function AboutMe() {
   </div>
 </div>
 
-
-        <div className="timeline">
-          {timelineData.map((item, index) => (
-            <div key={index} className="timeline-item ">
-              <div className="timeline-content transform hover:scale-105 transition duration-300 relative">
-                <h2>{item.year}</h2> <p>{item.event}</p>
-              </div>
-            </div>
-          ))}
+<div className="flex justify-center items-center"> 
+  <div className="timeline w-2/3 "> 
+    {timelineData.map((item, index) => (
+      <div key={index} className="timeline-item ">
+        <div className="timeline-content transform hover:scale-105 transition duration-300 relative">
+          <h2>{item.year}</h2> <p>{item.event}</p>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
 
         {/* Fun Facts */}
-        <div className="mb-16 relative z-10 p-8 rounded-lg ">
+        <div className="mb-16 relative z-10 p-8 rounded-lg text-center ">
           <h2 className="text-3xl text-white mb-6">Fun Facts 🌟</h2>
-          <ul className="list-disc pl-5 space-y-4">
+          <ul className="list-none pl-5 space-y-4">
             <li className="p-4 transform hover:scale-105 transition duration-300">
               <span className="font-thin text-white">
                 My favorite number is <span className="text-red-500">7</span>.

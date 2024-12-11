@@ -9,7 +9,7 @@ const Contact = () => {
 
       {/* Hero Section */}
       <div className="w-full max-w-4xl text-center py-16 relative z-10">
-        <h1 className="text-5xl lg:text-6xl font-extrabold text-white mb-6 animate-pulse leading-tight">
+        <h1 className="text-5xl lg:text-6xl font-mont font-light relative text-white mb-6 animate-pulse leading-tight">
           Contact Me
         </h1>
         <p className="text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto">

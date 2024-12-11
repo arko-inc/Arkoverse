@@ -5,41 +5,47 @@ const projects = [
   {
     title: "Toddy!",
     description: "The funniest but coolest robot I have ever made",
-    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    imageUrl:
+      "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     link: "/projects/toddy", // Updated link
   },
-  
+
   {
     title: "Toddy!",
     description: "The funniest but coolest robot I have ever made1",
-    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    imageUrl:
+      "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     link: "/projects/project1", // Updated link
   },
   {
     title: "Toddy!",
     description: "The funniest but coolest robot I have ever made",
-    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    imageUrl:
+      "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     link: "/projects/toddy", // Updated link
   },
   {
     title: "Toddy!",
     description: "The funniest but coolest robot I have ever made",
-    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    imageUrl:
+      "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     link: "/projects/toddy", // Updated link
   },
   {
     title: "Toddy!",
     description: "The funniest but coolest robot I have ever made",
-    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    imageUrl:
+      "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     link: "/projects/toddy", // Updated link
   },
   {
     title: "Toddy!",
     description: "The funniest but coolest robot I have ever made",
-    imageUrl: "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
+    imageUrl:
+      "https://science.nasa.gov/wp-content/uploads/2024/06/ingenuity-topiccard-3x2-1.jpg?w=1200",
     link: "/projects/toddy", // Updated link
   },
-  
+
   // Add more projects here
 ];
 
@@ -65,27 +71,30 @@ const Projects = () => {
             A showcase of my work and creations
           </p>
         </div>
-      
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <div className="grid gap-8 md:grid-cols-2 grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <Link to={project.link} key={index}>
-              <div
-                className="bg-[#1a1a1a] bg-opacity-10 border-white border-[.5px] backdrop-blur-md rounded-xl overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-md hover:shadow-white"
-              >
+              <div className="bg-[#1a1a1a] bg-opacity-10 border-white border-[.5px] backdrop-blur-md rounded-xl overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-md hover:shadow-white">
                 <img
                   className="w-full h-48 object-cover"
                   src={project.imageUrl}
                   alt={project.title}
                 />
                 <div className="p-5">
-                  <h1 className="text-2xl font-thin mb-2 font-mont">{project.title}</h1>
-                  <p className="text-gray-400 mb-4 font-mont">{project.description}</p>
+                  <h1 className="text-2xl font-thin mb-2 font-mont">
+                    {project.title}
+                  </h1>
+                  <p className="text-gray-400 mb-4 font-mont">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             </Link>
           ))}
         </div>
       </div>
+
     </div>
   );
 };

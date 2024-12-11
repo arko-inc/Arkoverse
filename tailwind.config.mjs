@@ -12,6 +12,8 @@ export default {
         conthrax:['conthrax', 'sans-serif'],
         nasa: ['NASA', 'sans-serif'],
         mont:['Montserrat', 'sans-serif'],
+        dune:['dune', 'sans-serif'],
+        trench:['Trench', 'sans-serif']
       },
       animation: {
         pulse: "pulse 2s infinite",

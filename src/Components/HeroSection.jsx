@@ -23,11 +23,16 @@ const HeroSection = () => {
               Arkoverse
             </span>
           </h1>
-          <p className="text-lg sm:text-xl mb-8 font-mont font-thin">
-            I’m Arko—a dreamer and creator, on a mission to take humanity to Mars and beyond. Explore my journey of innovation and space exploration.
-          </p>
+          <p className="text-base sm:text-base mb-8 font-mont font-light leading-relaxed">
+  I’m <span className="font-bold hover:underline hover:scale-105 transition-all duration-300">Arko</span>—a 
+  dreamer and inventor from Bangladesh, driven by a vision to pioneer humanity’s journey to the Martian surface. 
+  My life’s mission is to dedicate myself to unlocking the secrets of  
+  <span className="font-bold"> Mars </span> 
+  and leaving a lasting legacy of innovation and exploration.
+</p>
+
           <Link to="/projects">
-            <button className="px-6 py-3 rounded-full bg-transparent backdrop-blur-md border-[.5px] border-white text-white hover:bg-white hover:text-black transition duration-300">
+            <button className="px-4 py-2 rounded-full bg-transparent backdrop-blur-md border-[.5px] border-white text-white hover:bg-white hover:text-black transition duration-300 text-sm">
               Explore My Projects
             </button>
           </Link>
