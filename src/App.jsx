@@ -12,11 +12,13 @@ import Toddy from "./Pages/sub_pages/Toddy";
 import AppWrapper from "./AppWrapper";
 import './index.css';
 import './App.css';
+
 function App() {
   return (
     <Router>
-      <Navbar />
       <AppWrapper>
+        {/* Move Navbar and Footer inside AppWrapper */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutme" element={<AboutMe />} />
@@ -27,8 +29,8 @@ function App() {
        
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>
+        <Footer />
       </AppWrapper>
-      <Footer />
     </Router>
   );
 }

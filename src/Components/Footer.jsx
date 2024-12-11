@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black/90 backdrop-blur-md text-gray-300 py-10 px-6 font-mont">
+    <footer className="bg-black/90 backdrop-blur-md text-white py-10 px-6 font-mont">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
-          <h3 className="text-xl font-bold text-gray-100 mb-4">About Us</h3>
+          <h3 className="text-xl font-bold text-white mb-4">About Us</h3>
           <p className="text-sm leading-relaxed">
             Welcome to our universe, where ideas turn into reality. Join us on
             our journey to innovate, explore, and create amazing things.
@@ -16,7 +16,7 @@ const Footer = () => {
 
         {/* Links Section */}
         <div>
-          <h3 className="text-xl font-bold text-gray-100 mb-4">Quick Links</h3>
+          <h3 className="text-xl font-bold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
               <Link
@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* Social Section */}
         <div>
-          <h3 className="text-xl font-bold text-gray-100 mb-4">Connect with Us</h3>
+          <h3 className="text-xl font-bold text-white mb-4">Connect with Us</h3>
           <p className="text-sm leading-relaxed mb-4">
             Follow us on social media for updates, insights, and exclusive content.
           </p>
@@ -73,7 +73,7 @@ const Footer = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-100 transition"
+              className="text-white hover:text-gray-100 transition"
             >
               <i className="fab fa-twitter fa-2x"></i>
             </a>
@@ -82,7 +82,7 @@ const Footer = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-100 transition"
+              className="text-white hover:text-gray-100 transition"
             >
               <i className="fab fa-linkedin fa-2x"></i>
             </a>
@@ -91,7 +91,7 @@ const Footer = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-100 transition"
+              className="text-white hover:text-gray-100 transition"
             >
               <i className="fab fa-facebook fa-2x"></i>
             </a>
@@ -100,7 +100,7 @@ const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-100 transition"
+              className="text-white hover:text-gray-100 transition"
             >
               <i className="fab fa-instagram fa-2x"></i>
             </a>
@@ -109,7 +109,7 @@ const Footer = () => {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-100 transition"
+              className="text-white hover:text-gray-100 transition"
             >
               <i className="fab fa-github fa-2x"></i>
             </a>
@@ -118,8 +118,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="text-center mt-8 text-sm text-gray-500">
-      <i className="fa-regular fa-copyright"  style={{color:'#6b7280', }}></i> 2024 Arkoverse. All rights reserved. | Made with ❤️
+      <div className="text-center mt-8 text-sm text-white">
+      <i className="fa-regular fa-copyright"  style={{color:'#fff', }}></i> 2024 Arkoverse. All rights reserved. | Made with ❤️
       </div>
     </footer>
   );
