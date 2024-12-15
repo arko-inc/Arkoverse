@@ -32,8 +32,8 @@ const HeroSection = () => {
 </p>
 
           <Link to="/projects">
-            <button className="px-4 py-2 rounded-full bg-transparent backdrop-blur-md border-[.5px] border-white text-white hover:bg-white hover:text-black transition duration-300 text-sm">
-              Explore My Projects
+            <button className="px-12 py-3 rounded-full bg-transparent backdrop-blur-md border-[.5px] border-white text-white hover:bg-white hover:text-black transition duration-300 text-sm">
+              Explore Me
             </button>
           </Link>
         </div>

@@ -4,7 +4,7 @@ const Loading = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-black">
       <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-t-white border-b-white border-black"></div>
-      <h1 className="text-white text-2xl ml-4 font-mont font-conthrax">
+      <h1 className="text-white text-3xl font-black ml-4  font-trench ">
         Loading
         <span className="loading-container">
           {" "}
