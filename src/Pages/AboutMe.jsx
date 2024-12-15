@@ -12,7 +12,7 @@ function AboutMe() {
   return (
     <>
       <section
-        className="bg-black min-h-screen px-8 py-12 md:px-20 lg:px-32 font-mont font-lightrelative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 h-max"
+        className="bg-black min-h-screen px-8 sm:px-2 py-12 md:px-20 lg:px-32 font-mont font-lightrelative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 h-max"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1630694093867-4b947d812bf0?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
