@@ -27,7 +27,7 @@ const Toddy = () => {
 
         {/* Description Section */}
         <section className="px-2 sm:px-5 md:px-10 py-10">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
+          <div className="flex flex-col lg:flex-row justify-between items-center ">
             <div className="lg:w-1/2 z-30">
               <img
                 src="https://science.nasa.gov/wp-content/uploads/2017/11/deimos-1920x1200-1.jpg?w=2048&format=webp" // Replace with Toddy's image link
@@ -59,7 +59,7 @@ const Toddy = () => {
         </section>
 
         <section className="px-2 sm:px-5 md:px-10 py-10">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
+          <div className="flex md:flex-col  lg:flex-row justify-between items-center flex-col-reverse">
             <div className="lg:w-1/2 mt-10 lg:mt-0 relative lg:mr-9">
               <h2 className="text-3xl md:text-4xl font-thin tracking-tight">
                 Why Toddy is Perfect for Deimos?
@@ -141,136 +141,112 @@ const Toddy = () => {
           </div>
         </section>
 
-        {/* Features Section */}
         <section className="px-2 sm:px-5 md:px-10 py-10 bg-transparent relative font-thin text-center">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-5xl font-thin tracking-wider animate__animated animate__fadeInDown text-center">
-              Toddy's Features in Action
-            </h2>
-            <p className="mt-6 md:text-xl tracking-wide">
-              Explore how Toddy works in the harsh and mysterious environment of
-              Deimos.
-            </p>
-          </div>
+  <div className="text-center">
+    <h2 className="text-3xl md:text-5xl font-thin tracking-wider animate__animated animate__fadeInDown text-center">
+      Toddy's Features in Action
+    </h2>
+    <p className="mt-6 md:text-xl tracking-wide">
+      Explore how Toddy works in the harsh and mysterious environment of Deimos.
+    </p>
+  </div>
 
-          {/* Features Cards */}
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">
-                Low Gravity on Deimos:
-              </h3>
-              <p className="mt-4 text-base md:text-md leading-relaxed text-justify">
-                Deimos has only about 0.03 m/s² of surface gravity, which is
-                about <span className="font-light">1/100th</span> of Earth's
-                gravity and <span className="font-light">1/38th</span> of Mars'
-                gravity. This <span className="font-light">Low Gravity</span>{" "}
-                means that objects on Deimos experience much less downward pull.
-                For Toddy, this is a significant advantage because it allows him
-                to make efficient, high-flying hops across the surface.
-              </p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">
-                Jump Height Calculation:
-              </h3>
-              <p className="mt-4 text-base md:text-md leading-relaxed text-justify">
-                The formula for the jump height (H) is: <br />
-                <span className="font-light">H = (v²) / (2 * g)</span> where:
-                <ul>
-                  <li>
-                    <strong>v</strong> is the initial velocity of the jump
-                  </li>
-                  <li>
-                    <strong>g</strong> is the acceleration due to gravity (0.03
-                    m/s² on Deimos)
-                  </li>
-                </ul>
-                With minimal gravity, Toddy can achieve high jumps and cover
-                large distances with reduced energy.
-              </p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">Air Time</h3>
-              <p className="mt-4 text-base md:text-lg leading-relaxed text-justify">
-                By leveraging Deimos' unique gravity, Toddy can travel distances{" "}
-                <strong>much farther</strong> than traditional rovers, saving
-                energy and time. Toddy can jump up to{" "}
-                <strong> 166.67 meters</strong>, staying in the air for{" "}
-                <strong>666.66 S,</strong> allowing it to cover long distances
-                with minimal energy expenditure.
-              </p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">
-                Air Time Calculation:
-              </h3>
-              <p className="mt-4 text-base md:text-lg leading-relaxed">
-                The time in the air (t) can be calculated using the formula:
-                <span className="font-light">t = v / g</span> where:
-                <ul>
-                  <li>
-                    <strong>v</strong> is the vertical speed
-                  </li>
-                  <li>
-                    <strong>g</strong> is the gravity on Deimos (0.03 m/s²)
-                  </li>
-                </ul>
-                Toddy's ability to stay in the air for long durations allows for
-                longer travel distances, maximizing exploration efficiency.
-              </p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">
-                Radiation Shielding
-              </h3>
-              <p className="mt-4 text-base md:text-lg leading-relaxed">
-                Toddy’s <strong>advanced shielding system</strong> ensures that
-                it stays protected from harmful space radiation, ensuring
-                long-term durability and mission success. The rover's design
-                incorporates radiation protection materials to shield sensitive
-                components.
-              </p>
-            </div>
-          </div>
+  {/* Features Cards */}
+  <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Low Gravity on Deimos:</h3>
+      <p className="mt-4 text-base md:text-md leading-relaxed text-justify">
+        Deimos has only about 0.03 m/s² of surface gravity, which is about{" "}
+        <span className="font-light">1/100th</span> of Earth's gravity and{" "}
+        <span className="font-light">1/38th</span> of Mars' gravity. This{" "}
+        <span className="font-light">Low Gravity</span> means that objects on Deimos
+        experience much less downward pull. For Toddy, this is a significant
+        advantage because it allows him to make efficient, high-flying hops across
+        the surface.
+      </p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Jump Height Calculation:</h3>
+      <p className="mt-4 text-base md:text-md leading-relaxed text-justify">
+        The formula for the jump height (H) is: <br />
+        <span className="font-light">H = (v²) / (2 * g)</span> where:
+      </p>
+      <ul className="mt-4 text-base md:text-md leading-relaxed text-justify">
+        <li><strong>v</strong> is the initial velocity of the jump</li>
+        <li><strong>g</strong> is the acceleration due to gravity (0.03 m/s² on Deimos)</li>
+      </ul>
+      <p className="mt-4 text-base md:text-md leading-relaxed text-justify">
+        With minimal gravity, Toddy can achieve high jumps and cover large distances
+        with reduced energy.
+      </p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Air Time</h3>
+      <p className="mt-4 text-base md:text-lg leading-relaxed text-justify">
+        By leveraging Deimos' unique gravity, Toddy can travel distances{" "}
+        <strong>much farther</strong> than traditional rovers, saving energy and time.
+        Toddy can jump up to <strong>166.67 meters</strong>, staying in the air for{" "}
+        <strong>666.66 seconds,</strong> allowing it to cover long distances with
+        minimal energy expenditure.
+      </p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Air Time Calculation:</h3>
+      <p className="mt-4 text-base md:text-lg leading-relaxed">
+        The time in the air (t) can be calculated using the formula:{" "}
+        <span className="font-light">t = v / g</span> where:
+      </p>
+      <ul className="mt-4 text-base md:text-md leading-relaxed">
+        <li><strong>v</strong> is the vertical speed</li>
+        <li><strong>g</strong> is the gravity on Deimos (0.03 m/s²)</li>
+      </ul>
+      <p className="mt-4 text-base md:text-lg leading-relaxed">
+        Toddy's ability to stay in the air for long durations allows for longer travel
+        distances, maximizing exploration efficiency.
+      </p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Radiation Shielding</h3>
+      <p className="mt-4 text-base md:text-lg leading-relaxed">
+        Toddy’s <strong>advanced shielding system</strong> ensures that it stays
+        protected from harmful space radiation, ensuring long-term durability and
+        mission success. The rover's design incorporates radiation protection
+        materials to shield sensitive components.
+      </p>
+    </div>
+  </div>
 
-          {/* Interactive Features */}
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">Terrain Mapping</h3>
-              <p className="mt-4 text-base md:text-lg leading-relaxed">
-                Toddy uses <strong>advanced cameras and sensors</strong> to map
-                Deimos’ surface, capturing key data points for future
-                exploration and rover navigation. This data helps in planning
-                future missions and ensuring safe movement for the rover.
-              </p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">
-                Environmental Sensing
-              </h3>
-              <p className="mt-4 text-base md:text-lg leading-relaxed">
-                With the ability to measure <strong>radiation levels</strong>,
-                temperature, and more, Toddy gathers crucial environmental data
-                for the team. This information helps scientists understand the
-                conditions on Deimos, aiding in planning future missions to Mars
-                and beyond.
-              </p>
-            </div>
-            <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
-              <h3 className="text-xl md:text-2xl font-thin">
-                Energy Efficiency
-              </h3>
-              <p className="mt-4 text-base md:text-lg leading-relaxed">
-                Toddy operates with <strong>solar panels</strong> and a{" "}
-                <strong>minimal energy footprint</strong>, making it an
-                eco-friendly and sustainable solution for long-term missions.
-                The rover's energy-efficient design allows it to work
-                continuously without needing frequent recharges, maximizing its
-                exploration capabilities.
-              </p>
-            </div>
-          </div>
-        </section>
+  {/* Interactive Features */}
+  <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Terrain Mapping</h3>
+      <p className="mt-4 text-base md:text-lg leading-relaxed">
+        Toddy uses <strong>advanced cameras and sensors</strong> to map Deimos’ surface,
+        capturing key data points for future exploration and rover navigation. This
+        data helps in planning future missions and ensuring safe movement for the rover.
+      </p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Environmental Sensing</h3>
+      <p className="mt-4 text-base md:text-lg leading-relaxed">
+        With the ability to measure <strong>radiation levels</strong>, temperature, and
+        more, Toddy gathers crucial environmental data for the team. This information
+        helps scientists understand the conditions on Deimos, aiding in planning
+        future missions to Mars and beyond.
+      </p>
+    </div>
+    <div className="bg-[#1a1a1a] p-6 md:p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      <h3 className="text-xl md:text-2xl font-thin">Energy Efficiency</h3>
+      <p className="mt-4 text-base md:text-lg leading-relaxed">
+        Toddy operates with <strong>solar panels</strong> and a <strong>minimal energy
+        footprint</strong>, making it an eco-friendly and sustainable solution for
+        long-term missions. The rover's energy-efficient design allows it to work
+        continuously without needing frequent recharges, maximizing its exploration
+        capabilities.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* Carousel Section */}
 
