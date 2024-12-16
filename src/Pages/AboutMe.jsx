@@ -35,13 +35,14 @@ function AboutMe() {
               </button>
             </Link>
           </div>
-          <div className="md:w-1/2">
-            <img
-              src="https://i.imghippo.com/files/bqQ1323WEs.png"
-              alt="Arko's Portrait"
-              className="rounded-full w-72 h-72 md:w-96 md:h-96 shadow-xl border-[2px] bg-transparent border-white hover:scale-105 transform transition duration-500"
-            />
-          </div>
+          <div class="flex items-center justify-center w-96 h-96 rounded-full overflow-hidden shadow-xl border-[2px] bg-transparent border-white bg-center hover:scale-105 transform transition duration-500">
+  <img
+    src="https://i.imghippo.com/files/fsJm2995utk.jpeg"
+    alt="Arko's Portrait"
+    class="w-full h-full object-cover"
+  />
+</div>
+
         </div>
 
         {/* Skills Section */}
