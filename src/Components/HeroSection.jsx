@@ -25,7 +25,7 @@ const HeroSection = () => {
           </h1>
           <p className="text-base sm:text-base mb-8 font-mont font-light leading-relaxed">
   I’m <span className="font-bold hover:underline hover:scale-105 transition-all duration-300">Arko</span>—a 
-  dreamer and inventor from Bangladesh, driven by a vision to pioneer humanity’s journey to the Martian surface. 
+  dreamer and inventor, driven by a vision to pioneer humanity’s journey to the Martian surface. 
   My life’s mission is to dedicate myself to unlocking the secrets of  
   <span className="font-bold"> Mars </span> 
   and leaving a lasting legacy of innovation and exploration.

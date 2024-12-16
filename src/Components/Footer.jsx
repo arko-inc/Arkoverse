@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black/90 backdrop-blur-md text-white py-10 px-6 font-mont">
+    <footer className="bg-black backdrop-blur-md text-white py-10 px-6 font-mont">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
@@ -70,7 +70,7 @@ const Footer = () => {
           <div className="flex space-x-4">
             {/* Twitter */}
             <a
-              href="https://twitter.com"
+              href="https://x.com/arko_inc"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-100 transition"
@@ -88,7 +88,7 @@ const Footer = () => {
             </a>
             {/* Facebook */}
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=100076826942709"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-100 transition"
@@ -97,7 +97,7 @@ const Footer = () => {
             </a>
             {/* Instagram */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/arko_harsh/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-100 transition"
