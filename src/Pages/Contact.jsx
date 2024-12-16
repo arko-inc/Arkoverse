@@ -30,7 +30,7 @@ const Contact = () => {
             <input
               type="text"
               id="name"
-              className="mt-1 block w-full bg-transparent border-0 border-b border-gray-200 text-gray-200 focus:ring-0 focus:border-b-2 focus:border-indigo-500"
+              className="mt-1 block w-full bg-transparent border-0 border-b border-gray-200 text-gray-200 focus:ring-0 focus:outline-none focus:border-b-2"
               placeholder="Your Name"
             />
           </div>
@@ -41,7 +41,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              className="mt-1 block w-full bg-transparent border-0 border-b border-gray-200 text-gray-200 focus:ring-0 focus:border-b-2 focus:border-indigo-500"
+              className="mt-1 block w-full bg-transparent border-0 border-b border-gray-200 text-gray-200 focus:ring-0 focus:border-b-2 focus:outline-none"
               placeholder="Your Email"
             />
           </div>
@@ -52,14 +52,14 @@ const Contact = () => {
             <textarea
               id="message"
               rows="4"
-              className="mt-1 block w-full bg-transparent border-0 border-b border-gray-200 text-gray-200 focus:ring-0 focus:border-b-2 focus:border-indigo-500"
+              className="mt-1 block w-full bg-transparent border-0 border-b border-gray-200 text-gray-200 focus:ring-0 focus:border-b-2 focus:outline-none"
               placeholder="Write your message here..."
             ></textarea>
           </div>
           <div className="flex justify-center">
             <button
               type="submit"
-              className="w-1/2 bg-transparent backdrop-blur-lg  border-white border-2 text-white font-bold py-3 rounded-md shadow-lg"
+              className="w-3/12 bg-transparent backdrop-blur-lg  border-white border text-white font-base py-3 rounded-md shadow-lg"
             >
               Send Message
             </button>
