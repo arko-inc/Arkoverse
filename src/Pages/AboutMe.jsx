@@ -27,7 +27,7 @@ function AboutMe() {
               About <span className="text-white font-thin">Me</span>
             </h1>
             <p className="text-lg mt-4 text-white">
-              I'm <span className="text-white font-lightthin ">Arko</span>, a high school student, dreamer, innovator, and aspiring aerospace engineer, committed to pushing the boundaries of the possible. Let's journey together into the Arkoverse!
+              I'm <span className="text-white font-lightthin ">Arko</span>, a college student, dreamer, innovator, and aspiring aerospace engineer, committed to pushing the boundaries of the possible. Let's journey together into the Arkoverse!
             </p>
             <Link to="/projects">
               <button className="mt-8 px-6 py-3 bg-transparent text-white border-white border-[1px] hover:bg-white hover:text-black rounded-full font-medium shadow-lg transform hover:scale-110 transition duration-300">
