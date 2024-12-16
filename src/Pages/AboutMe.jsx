@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const timelineData = [
-  { year: 2023, event: "Started MIT Application" },
+  { year: 2023, event: "completed my K-11" },
   { year: 2022, event: "Completed a major project on AI Development" },
   { year: 2021, event: "Won a coding competition" },
   // Add more events as needed
@@ -140,11 +140,11 @@ function AboutMe() {
           </section>
 
           {/* Education Section */}
-          <section className="mb-12">
+          {/* <section className="mb-12">
             <h2 className="text-3xl font-light text-white mb-6">Education</h2>
-            <div className="space-y-8">
+            <div className="space-y-8"> */}
               {/* Degree 1 */}
-              <div className="flex justify-between items-center">
+              {/* <div className="flex justify-between items-center">
                 <div>
                   <h3 className="text-2xl font-lightthin  text-white">High School Student (SSC)</h3>
                   <p className="text-sm text-white"><span className="text-green-500 font-light">Ban<span className="text-red-500">glad</span>esh</span> | Expected Graduation: 2024</p>
@@ -152,7 +152,7 @@ function AboutMe() {
                 <div className="text-sm font-light text-green-400">Ban<span className="text-red-500">glad</span>esh</div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Skills Section */}
           <section className="mb-12">
