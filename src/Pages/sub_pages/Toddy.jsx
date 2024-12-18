@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { color } from "framer-motion";
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -5,6 +6,35 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Toddy = () => {
   return (
     <>
+      <Helmet>
+        <title>Toddy - Deimos Rover Companion</title>
+        <meta name="description" content="Meet Toddy, the frog-like rover companion designed for Deimos exploration, equipped with advanced features for long-term missions." />
+        <meta name="keywords" content="Deimos, rover, space exploration, Toddy, Mars moons, low gravity, technology, space mission" />
+        <meta name="author" content="Arko" />
+        
+        {/* Schema.org JSON-LD for SEO */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Meet Toddy: The Frog-Like Rover Companion for Deimos Exploration",
+              "description": "Toddy is a unique frog-like rover designed to assist in the exploration of Deimos, utilizing low gravity for efficient hopping across its surface.",
+              "author": {
+                "@type": "Person",
+                "name": "Arko"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Xpace"
+              },
+              "datePublished": "2024-12-17",
+              "image": "https://science.nasa.gov/wp-content/uploads/2017/11/deimos-1920x1200-1.jpg?w=2048&format=webp"
+            }
+          `}
+        </script>
+      </Helmet>
+
       <div
         className="relative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 h-max font-mont overflow-hidden"
         style={{
@@ -30,7 +60,7 @@ const Toddy = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center ">
             <div className="lg:w-1/2 z-30">
               <img
-                src="https://science.nasa.gov/wp-content/uploads/2017/11/deimos-1920x1200-1.jpg?w=2048&format=webp" // Replace with Toddy's image link
+                src="https://science.nasa.gov/wp-content/uploads/2017/11/deimos-1920x1200-1.jpg?w=2048&format=webp"
                 alt="Toddy"
                 className="w-full h-auto rounded-lg shadow-xl transform hover:scale-105 hover:rotate-3 transition-transform duration-500 ease-in-out"
               />
@@ -57,7 +87,6 @@ const Toddy = () => {
             </div>
           </div>
         </section>
-
         <section className="px-2 sm:px-5 md:px-10 py-10">
           <div className="flex md:flex-col  lg:flex-row justify-between items-center flex-col-reverse">
             <div className="lg:w-1/2 mt-10 lg:mt-0 relative lg:mr-9">
@@ -277,6 +306,8 @@ const Toddy = () => {
             </li>
           </ul>
         </div>
+       
+
       </div>
     </>
   );

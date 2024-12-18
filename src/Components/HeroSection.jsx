@@ -1,9 +1,44 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
     <>
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Arkoverse | Welcome to Arko's Universe</title>
+        <meta
+          name="description"
+          content="Welcome to Arkoverse, the personal universe of Arko—a dreamer and inventor dedicated to pioneering humanity's journey to Mars and creating a legacy of innovation."
+        />
+        <meta
+          name="keywords"
+          content="Arkoverse, Arko, Mars exploration, innovation, projects, space engineering, portfolio"
+        />
+        <meta name="author" content="Arko" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
+
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Arko",
+          "description":
+            "Arko is a dreamer and inventor dedicated to unlocking the secrets of Mars and creating a legacy of innovation.",
+          "url": "https://arkoverse.example.com", // Replace with your actual site URL
+          "sameAs": [
+            "https://www.linkedin.com/in/your-profile", // Replace with your LinkedIn URL
+            "https://twitter.com/your-profile", // Replace with your Twitter URL
+          ],
+          "jobTitle": "Inventor and Space Enthusiast",
+          "knowsAbout": ["Mars", "Space Exploration", "Innovation", "Engineering"],
+        })}
+      </script>
+
+      {/* Hero Section */}
       <section
         className="relative flex flex-col justify-center items-end h-screen bg-cover bg-center"
         style={{
@@ -24,12 +59,16 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-base sm:text-base mb-8 font-mont font-light leading-relaxed">
-  I’m <span className="font-bold hover:underline hover:scale-105 transition-all duration-300">Arko</span>—a 
-  dreamer and inventor, driven by a vision to pioneer humanity’s journey to the Martian surface. 
-  My life’s mission is to dedicate myself to unlocking the secrets of  
-  <span className="font-bold"> Mars </span> 
-  and leaving a lasting legacy of innovation and exploration.
-</p>
+            I’m{" "}
+            <span className="font-bold hover:underline hover:scale-105 transition-all duration-300">
+              Arko
+            </span>
+            —a dreamer and inventor, driven by a vision to pioneer humanity’s
+            journey to the Martian surface. My life’s mission is to dedicate
+            myself to unlocking the secrets of{" "}
+            <span className="font-bold">Mars</span> and leaving a lasting legacy
+            of innovation and exploration.
+          </p>
 
           <Link to="/projects">
             <button className="px-12 py-3 rounded-full bg-transparent backdrop-blur-md border-[.5px] border-white text-white hover:bg-white hover:text-black transition duration-300 text-sm">

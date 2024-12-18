@@ -12,7 +12,7 @@ import Toddy from "./Pages/sub_pages/Toddy";
 import AppWrapper from "./AppWrapper";
 import './index.css';
 import './App.css';
-import Under from "./Pages/Under";
+
 
 function App() {
   return (

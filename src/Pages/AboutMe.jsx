@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const timelineData = [
   { year: 2023, event: "completed my K-11" },
@@ -11,6 +12,37 @@ const timelineData = [
 function AboutMe() {
   return (
     <>
+      <Helmet>
+        <title>About Me | Arko</title>
+        <meta name="description" content="Learn more about Arko, an aspiring aerospace engineer passionate about space exploration and AI." />
+        <meta name="keywords" content="Arko, aerospace engineer, AI, CubeSat, space exploration" />
+        <meta property="og:title" content="About Me | Arko" />
+        <meta property="og:description" content="Learn more about Arko, an aspiring aerospace engineer passionate about space exploration and AI." />
+        <meta property="og:image" content="https://i.imghippo.com/files/fsJm2995utk.jpeg" />
+        <meta property="og:url" content="https://arkoverse.com/about" />
+
+        {/* Schema.org markup for structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Arko",
+            "url": "https://arkoverse.com",
+            "sameAs": [
+              "https://www.linkedin.com/in/arko",
+              "https://github.com/arko"
+            ],
+            "jobTitle": "Aspiring Aerospace Engineer",
+            "alumniOf": {
+              "@type": "EducationalOccupationalCredential",
+              "name": "MIT"
+            },
+            "image": "https://i.imghippo.com/files/fsJm2995utk.jpeg",
+            "description": "Arko is a college student, dreamer, innovator, and aspiring aerospace engineer, committed to pushing the boundaries of the possible."
+          })}
+        </script>
+      </Helmet>
+
       <section
         className="bg-black min-h-screen px-6 sm:px-2 py-12 md:px-20 lg:px-32 font-mont font-lightrelative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 h-max"
         style={{
@@ -35,51 +67,50 @@ function AboutMe() {
               </button>
             </Link>
           </div>
-          <div class="flex items-center justify-center w-96 h-96 rounded-full overflow-hidden shadow-xl border-[2px] bg-transparent border-white bg-center hover:scale-105 transform transition duration-500">
-  <img
-    src="https://i.imghippo.com/files/fsJm2995utk.jpeg"
-    alt="Arko's Portrait"
-    class="w-full h-full object-cover"
-  />
-</div>
-
+          <div className="flex items-center justify-center w-96 h-96 rounded-full overflow-hidden shadow-xl border-[2px] bg-transparent border-white bg-center hover:scale-105 transform transition duration-500">
+            <img
+              src="https://i.imghippo.com/files/fsJm2995utk.jpeg"
+              alt="Arko's Portrait"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* Skills Section */}
-      <div className="mb-16 font-thin">
-  <h2 className="relative text-3xl text-white mb-6">My Skills</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-base font-thin">
-    {[
-      "React",
-      "JavaScript",
-      "HTML & CSS",
-      "Python",
-      "AI Development",
-      "CubeSat Design",
-    ].map((skill, index) => (
-      <div
-        key={index}
-        className="bg-[#1a1a1a] rounded-lg p-6 text-center font-lightshadow-lg transform transition duration-300 overflow-hidden hover:scale-110 hover:bg-gray-800 hover:shadow-2xl"
-      >
-        <h3 className="text-lg font-lighttext-gray-100 truncate">
-          {skill}
-        </h3>
-      </div>
-    ))}
-  </div>
-</div>
-
-<div className="flex justify-center items-center"> 
-  <div className="timeline md:w-2/3 w-full"> 
-    {timelineData.map((item, index) => (
-      <div key={index} className="timeline-item ">
-        <div className="timeline-content transform hover:scale-105 transition duration-300 relative">
-          <h2>{item.year}</h2> <p>{item.event}</p>
+        <div className="mb-16 font-thin">
+          <h2 className="relative text-3xl text-white mb-6">My Skills</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-base font-thin">
+            {[
+              "React",
+              "JavaScript",
+              "HTML & CSS",
+              "Python",
+              "AI Development",
+              "CubeSat Design",
+            ].map((skill, index) => (
+              <div
+                key={index}
+                className="bg-[#1a1a1a] rounded-lg p-6 text-center font-lightshadow-lg transform transition duration-300 overflow-hidden hover:scale-110 hover:bg-gray-800 hover:shadow-2xl"
+              >
+                <h3 className="text-lg font-lighttext-gray-100 truncate">
+                  {skill}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    ))}
-  </div>
-</div>
+
+        <div className="flex justify-center items-center"> 
+          <div className="timeline md:w-2/3 w-full"> 
+            {timelineData.map((item, index) => (
+              <div key={index} className="timeline-item ">
+                <div className="timeline-content transform hover:scale-105 transition duration-300 relative">
+                  <h2>{item.year}</h2> <p>{item.event}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Fun Facts */}
         <div className="mb-16 relative z-10 p-8 rounded-lg text-center ">
@@ -109,7 +140,6 @@ function AboutMe() {
           </ul>
         </div>
 
-         {/* <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/50 via-black/60 to-gray-900/20 z-0"></div> */}
         <div className="max-w-6xl mx-auto px-6 mt-10 relative">
           {/* Header Section */}
           <header className="text-center mb-10">
@@ -139,60 +169,30 @@ function AboutMe() {
             </div>
           </section>
 
-          {/* Education Section */}
-          {/* <section className="mb-12">
-            <h2 className="text-3xl font-light text-white mb-6">Education</h2>
-            <div className="space-y-8"> */}
-              {/* Degree 1 */}
-              {/* <div className="flex justify-between items-center">
-                <div>
-                  <h3 className="text-2xl font-lightthin  text-white">High School Student (SSC)</h3>
-                  <p className="text-sm text-white"><span className="text-green-500 font-light">Ban<span className="text-red-500">glad</span>esh</span> | Expected Graduation: 2024</p>
-                </div>
-                <div className="text-sm font-light text-green-400">Ban<span className="text-red-500">glad</span>esh</div>
-              </div>
-            </div>
-          </section> */}
-
           {/* Skills Section */}
           <section className="mb-12">
-  <h2 className="text-3xl font-lighttext-white mb-6">Skills</h2>
-  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
-      <h3 className="text-lg font-thin">React</h3>
-      <p className="text-sm text-gray-400">Building dynamic web applications</p>
-    </div>
-    <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
-      <h3 className="text-lg font-thin">Python</h3>
-      <p className="text-sm text-gray-400">Data science and automation scripts</p>
-    </div>
-    <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
-      <h3 className="text-lg font-thin">AI & Machine Learning</h3>
-      <p className="text-sm text-gray-400">AI-driven projects and problem-solving</p>
-    </div>
-    <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
-      <h3 className="text-lg font-thin">CubeSat Design</h3>
-      <p className="text-sm text-gray-400">Design and prototype CubeSats</p>
-    </div>
-  </div>
-</section>
-
-
-          {/* Projects Section */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-light text-white mb-6">Projects</h2>
-            <ul className="list-disc pl-6 space-y-4">
-              <li><span className="text-white">Developed a rocket prototype as part of my future space agency, Xpace.</span></li>
-              <li><span className="text-white">Created a concept for an interplanetary social media platform.</span></li>
-              <li><span className="text-white">Built AI-driven applications for CubeSat navigation.</span></li>
-            </ul>
+            <h2 className="text-3xl font-lighttext-white mb-6">Skills</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
+                <h3 className="text-lg font-thin">React</h3>
+                <p className="text-sm text-gray-400">Building dynamic web applications</p>
+              </div>
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
+                <h3 className="text-lg font-thin">Python</h3>
+                <p className="text-sm text-gray-400">Data science and automation scripts</p>
+              </div>
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
+                <h3 className="text-lg font-thin">AI & Machine Learning</h3>
+                <p className="text-sm text-gray-400">AI-driven projects and problem-solving</p>
+              </div>
+              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
+                <h3 className="text-lg font-thin">CubeSat Design</h3>
+                <p className="text-sm text-gray-400">Design and prototype CubeSats</p>
+              </div>
+            </div>
           </section>
-
         </div>
       </section>
-
-      {/* Resume Section */}
- 
     </>
   );
 }
