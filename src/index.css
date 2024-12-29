@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* In src/index.css or your global CSS file */
 @layer utilities {
   .tilt {
     transition: transform 0.3s ease-in-out;
@@ -238,5 +237,18 @@ button:active + .hidden {
   }
   40% {
     transform: scale(1);
+  }
+}
+/* General .font-thin class for all browsers */
+.font-thin {
+  font-weight: 100;
+}
+
+/* Safari-specific .font-thin class */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .font-thin {
+      font-weight: 100;
+    }
   }
 }

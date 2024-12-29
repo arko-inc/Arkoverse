@@ -129,7 +129,7 @@ const Projects = () => {
         <div className="grid gap-8 md:grid-cols-2 grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <Link to={project.link} key={index} className="">
-              <div className="bg-[#1a1a1a] bg-opacity-10 border-white border-[.5px] backdrop-blur-md rounded-xl overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-md h-56 md:h-72 hover:shadow-white">
+              <div className="bg-[#1a1a1a] bg-opacity-10 border-white border-[1px] backdrop-blur-md rounded-xl overflow-hidden transform transition-transform duration-500 ease-in-out hover:scale-105 hover:rotate-3 hover:shadow-md h-56 md:h-72 hover:shadow-white shadow-2xl">
                 <img
                   className="w-full h-28 object-cover md:h-48"
                   src={project.imageUrl}

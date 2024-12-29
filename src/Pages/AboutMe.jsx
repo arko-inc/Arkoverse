@@ -11,9 +11,10 @@ const timelineData = [
 
 function AboutMe() {
   const exams = [
-    { id: 1, exam: "SSC", result: "A+", year: 2010 },
-    { id: 2, exam: "HSC", result: "A", year: 2012 },
-    { id: 3, exam: "BSc", result: "First Class", year: 2016 },
+    { id: 1, exam: "SSC", result: "GPA: 5.00 out of 5.00", year: 2024 },
+    { id: 2, exam: "11th Standard Exam", result: "GPA: 5.00 out of 5.00", year: 2025 },
+    { id: 3, exam: "IELTS", result: "8.5 Band out of 9 Band", year: 2025 },
+    { id: 4, exam: "SAT", result: "1585 out of 1600", year: 2025 },
 
   ]; // Add more exams as needed ];
 
@@ -64,28 +65,28 @@ function AboutMe() {
       </Helmet>
 
       <section
-        className="bg-black min-h-screen px-6 sm:px-2 py-12 md:px-20 lg:px-32 font-mont font-lightrelative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 h-max"
+        className=" font-mont font-lightrelative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 "
         style={{
           backgroundImage:
             "url('/mars.avif')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/5 via-black/50 to-gray-900/20 z-1"></div>
+           <div className="fixed inset-0 bg-gradient-to-br from-[#1a1a1a]/10 via-black/20 to-gray-900/30 "></div>
 
         {/* Hero Section */}
-        <div className="relative flex flex-col md:flex-row items-center justify-center gap-12 mb-16 mt-10">
+        <div className="relative flex flex-col md:flex-row items-center justify-center gap-12 mb-16 mt-10 ">
           <div className="md:w-1/2 text-center md:text-left">
-            <h1 className="text-4xl lg:text-6xl font-lighttext-white animate-pulse leading-tight font-mont">
-              About <span className="text-white font-thin">Me</span>
+            <h1 className="text-4xl lg:text-6xl text-white animate-pulse font-thin">
+              About <span className=" font-thin">Me</span>
             </h1>
-            <p className="text-lg mt-4 text-white">
-              I'm <span className="text-white font-lightthin ">Arko</span>, a
+            <p className="text-lg mt-4 text-white font-[300]">
+              I'm <span className="text-white font-medium ">Arko</span>, a
               college student, dreamer, innovator, and aspiring aerospace
               engineer, committed to pushing the boundaries of the possible.
               Let's journey together into the Arkoverse!
             </p>
             <Link to="/projects">
-              <button className="mt-8 px-6 py-3 bg-transparent text-white border-white border-[1px] hover:bg-white hover:text-black rounded-full font-medium shadow-lg transform hover:scale-110 transition duration-300">
+              <button className="mt-8 px-6 py-3 bg-transparent text-white border-white border-[1px] hover:bg-white hover:text-black rounded-full font-normal shadow-lg transform hover:scale-110 transition duration-300">
                 Explore My Work
               </button>
             </Link>
@@ -100,9 +101,9 @@ function AboutMe() {
         </div>
 
         {/* Skills Section */}
-        <div className="mb-16 font-thin">
+        <div className="mb-16 font-thin lg:mx-14">
           <h2 className="relative text-3xl text-white mb-6">My Skills</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-base font-thin">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  font-thin">
             {[
               "React",
               "JavaScript",
@@ -113,7 +114,7 @@ function AboutMe() {
             ].map((skill, index) => (
               <div
                 key={index}
-                className="bg-[#1a1a1a] rounded-lg p-6 text-center font-lightshadow-lg transform transition duration-300 overflow-hidden hover:scale-110 hover:bg-gray-800 hover:shadow-2xl"
+                className="bg-[#1a1a1a] rounded-lg p-6 text-center font-lightshadow-lg transform transition duration-300 overflow-hidden hover:scale-110  hover:shadow-2xl"
               >
                 <h3 className="text-lg font-lighttext-gray-100 truncate">
                   {skill}
@@ -136,38 +137,13 @@ function AboutMe() {
         </div>
 
         {/* Fun Facts */}
-        <div className="mb-16 relative z-10 p-8 rounded-lg text-center ">
-          <h2 className="text-3xl text-white mb-6">Fun Facts 🌟</h2>
-          <ul className="list-none pl-5 space-y-4">
-            <li className="p-4 transform hover:scale-105 transition duration-300">
-              <span className="font-lighttext-white">
-                My favorite number is <span className="text-red-500">7</span>.
-              </span>
-            </li>
-            <li className="p-4 transform hover:scale-105 transition duration-300">
-              <span className="font-lighttext-white">
-                I love chocolates 🍫.
-              </span>
-            </li>
-            <li className="p-4 transform hover:scale-105 transition duration-300">
-              <span className="font-lighttext-white">
-                Dreaming of founding a space agency:{" "}
-                <span className="text-red-400">Xpace</span>.
-              </span>
-            </li>
-            <li className="p-4 transform hover:scale-105 transition duration-300">
-              <span className="font-lighttext-white">
-                I adore challenges and limitless possibilities!
-              </span>
-            </li>
-          </ul>
-        </div>
+ 
 
         <div className="max-w-6xl mx-auto px-6 mt-10 relative">
           {/* Header Section */}
           <header className="text-center mb-10">
             <h1 className="text-4xl font-light text-white font-mont">
-              Arko's Resume
+              My Resume
             </h1>
             <p className="mt-2 text-xl text-white">
               Aspiring aerospace engineer, passionate about space exploration
@@ -183,8 +159,9 @@ function AboutMe() {
               <div className="flex justify-between items-center">
                 <div>
                   <h3 className="text-2xl font-light  text-white">
-                    Web Development & Student
+              Student & Web Development 
                   </h3>
+                  <br />
                   <p className="text-sm text-white">
                     Freelancer | June 2023 - Present
                   </p>
@@ -211,25 +188,25 @@ function AboutMe() {
           <section className="mb-12">
             <h2 className="text-3xl font-lighttext-white mb-6">Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
+              <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
                 <h3 className="text-lg font-thin">React</h3>
                 <p className="text-sm text-gray-400">
                   Building dynamic web applications
                 </p>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
+              <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
                 <h3 className="text-lg font-thin">Python</h3>
                 <p className="text-sm text-gray-400">
                   Data science and automation scripts
                 </p>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
+              <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
                 <h3 className="text-lg font-thin">AI & Machine Learning</h3>
                 <p className="text-sm text-gray-400">
                   AI-driven projects and problem-solving
                 </p>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
+              <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
                 <h3 className="text-lg font-thin">CubeSat Design</h3>
                 <p className="text-sm text-gray-400">
                   Design and prototype CubeSats
@@ -238,12 +215,40 @@ function AboutMe() {
             </div>
           </section>
           <div className="App">
-            <h1 className="text-center text-2xl font-bold my-5">
+            <h1 className="text-center text-2xl font-normal font-mont my-5">
               Educational Qualifications
             </h1>
-            {/* <Table exams={exams} /> */}
+            <Table exams={exams} />
           </div>
         </div>
+        <div className=" relative z-10 mt-4 p-8 rounded-lg text-center ">
+          <h2 className="text-3xl text-white mb-6">Fun Facts 🌟</h2>
+          <ul className="list-none pl-5 space-y-4">
+            <li className="p-4 transform hover:scale-105 transition duration-300">
+              <span className="font-lighttext-white">
+                My favorite number is <span className="text-red-500">7</span>.
+              </span>
+            </li>
+            <li className="p-4 transform hover:scale-105 transition duration-300">
+              <span className="font-lighttext-white">
+                I love chocolates 🍫.
+              </span>
+            </li>
+            <li className="p-4 transform hover:scale-105 transition duration-300">
+              <span className="font-lighttext-white">
+                Dreaming of founding a space agency:{" "}
+                <span className="text-red-400">Xpace</span>.
+              </span>
+            </li>
+            <li className="p-4 transform hover:scale-105 transition duration-300">
+              <span className="font-lighttext-white">
+                I adore challenges and limitless possibilities!
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
       </section>
     </>
   );

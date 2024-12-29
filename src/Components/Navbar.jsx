@@ -36,7 +36,7 @@ const Navbar = () => {
                   to="/projects"
                   className={`text-white relative transition duration-700 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all ${isActive("/projects") ? "after:w-full" : ""}`}
                 >
-                  Projects
+                  My Projects
                 </Link>
                 <Link
                   to="/aboutme"
@@ -95,7 +95,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 className={`block text-white relative transition duration-300 after:block after:absolute after:left-0 after:bottom-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:transition-all text-right font-mont ${isActive("/projects") ? "after:w-full" : ""}`}
               >
-                Projects
+                My Projects
               </Link>
        
               <Link

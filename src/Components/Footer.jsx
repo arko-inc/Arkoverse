@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black backdrop-blur-md text-white py-10 px-6 font-mont">
+    <footer className="bg-[#111010] backdrop-blur-md text-white py-10 px-6 font-mont">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* About Section */}
         <div>
           <h3 className="text-xl font-bold text-white mb-4">About Us</h3>
           <p className="text-sm leading-relaxed">
-            Welcome to our universe, where ideas turn into reality. Join us on
-            our journey to innovate, explore, and create amazing things.
+            Welcome to my universe, where I have turned my ideas into reality. Join me on
+            my journey to see my innovations, creations and amazing weird stuff.
           </p>
         </div>
 
@@ -55,9 +55,9 @@ const Footer = () => {
 
         {/* Social Section */}
         <div>
-          <h3 className="text-xl font-bold text-white mb-4">Connect with Us</h3>
+          <h3 className="text-xl font-bold text-white mb-4">Connect with me</h3>
           <p className="text-sm leading-relaxed mb-4">
-            Follow us on social media for updates, insights, and exclusive content.
+            Follow me on social media for updates, insights, and exclusive content.
           </p>
           <div className="flex space-x-4">
             {/* Twitter */}
@@ -67,7 +67,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-white hover:text-gray-100 transition"
             >
-              <i className="fab fa-twitter fa-2x"></i>
+              <i className="fab fa-x-twitter fa-2x"></i>
             </a>
             {/* LinkedIn */}
             <a
@@ -108,9 +108,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <hr className="border-white mt-6"/>
 
       {/* Bottom Section */}
-      <div className="text-center mt-8 text-sm text-white">
+      <div className="text-center mt-4 text-sm text-white">
         <i className="fa-regular fa-copyright" style={{ color: '#fff' }}></i> 2024 Arkoverse. All rights reserved. | Made with ❤️
       </div>
     </footer>

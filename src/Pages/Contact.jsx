@@ -12,14 +12,14 @@ const Contact = () => {
         <h1 className="text-5xl lg:text-6xl font-mont font-light relative text-white mb-6 animate-pulse leading-tight">
           Contact Me
         </h1>
-        <p className="text-lg lg:text-xl text-white max-w-2xl mx-auto">
+        <p className="text-lg lg:text-xl text-white max-w-2xl mx-auto font-thin">
           Have questions, ideas, or just want to chat? Let’s connect and make awesome things happen together. 🚀
         </p>
       </div>
 
       {/* Contact Form */}
       <div className="w-full max-w-4xl bg-transparent backdrop-blur-sm border border-white rounded-lg shadow-xl p-10 mb-16 relative z-10">
-        <h2 className="text-4xl font-bold text-center mb-8 text-white leading-tight">
+        <h2 className="text-4xl font-thin text-center mb-8 text-white leading-tight">
           Send a Message
         </h2>
         <form className="space-y-6">
@@ -66,7 +66,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-
+    
       {/* Social Links */}
   
     </div>
