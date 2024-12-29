@@ -64,6 +64,7 @@ const Navbar = () => {
                     src={isMobileMenuOpen ? "/cross.svg" : "/hamburger.svg"}
                     alt="Menu Icon"
                     className={`h-6 w-6 transform transition-transform duration-300 ${isMobileMenuOpen ? "rotate-90" : ""}`} // Rotation effect for cross
+                    loading="lazy"
                   />
                 </button>
               </div>

@@ -31,15 +31,7 @@ const Footer = () => {
                 to="/projects"
                 className="hover:text-gray-100 transition hover:underline"
               >
-                projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/aboutme"
-                className="hover:text-gray-100 transition hover:underline"
-              >
-                About Me
+                Projects
               </Link>
             </li>
             <li>
@@ -119,7 +111,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="text-center mt-8 text-sm text-white">
-      <i className="fa-regular fa-copyright"  style={{color:'#fff', }}></i> 2024 Arkoverse. All rights reserved. | Made with ❤️
+        <i className="fa-regular fa-copyright" style={{ color: '#fff' }}></i> 2024 Arkoverse. All rights reserved. | Made with ❤️
       </div>
     </footer>
   );

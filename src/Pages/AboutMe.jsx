@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import Table from "../Components/Table";
 const timelineData = [
   { year: 2023, event: "completed my K-11" },
   { year: 2022, event: "Completed a major project on AI Development" },
@@ -10,15 +10,34 @@ const timelineData = [
 ];
 
 function AboutMe() {
+  const exams = [
+    { id: 1, exam: "SSC", result: "A+", year: 2010 },
+    { id: 2, exam: "HSC", result: "A", year: 2012 },
+    { id: 3, exam: "BSc", result: "First Class", year: 2016 },
+
+  ]; // Add more exams as needed ];
+
   return (
     <>
       <Helmet>
         <title>About Me | Arko</title>
-        <meta name="description" content="Learn more about Arko, an aspiring aerospace engineer passionate about space exploration and AI." />
-        <meta name="keywords" content="Arko, aerospace engineer, AI, CubeSat, space exploration" />
+        <meta
+          name="description"
+          content="Learn more about Arko, an aspiring aerospace engineer passionate about space exploration and AI."
+        />
+        <meta
+          name="keywords"
+          content="Arko, aerospace engineer, AI, CubeSat, space exploration"
+        />
         <meta property="og:title" content="About Me | Arko" />
-        <meta property="og:description" content="Learn more about Arko, an aspiring aerospace engineer passionate about space exploration and AI." />
-        <meta property="og:image" content="https://i.imghippo.com/files/fsJm2995utk.jpeg" />
+        <meta
+          property="og:description"
+          content="Learn more about Arko, an aspiring aerospace engineer passionate about space exploration and AI."
+        />
+        <meta
+          property="og:image"
+          content="https://i.imghippo.com/files/fsJm2995utk.jpeg"
+        />
         <meta property="og:url" content="https://arkoverse.com/about" />
 
         {/* Schema.org markup for structured data */}
@@ -26,19 +45,20 @@ function AboutMe() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Arko",
-            "url": "https://arkoverse.com",
-            "sameAs": [
+            name: "Arko",
+            url: "https://arkoverse.com",
+            sameAs: [
               "https://www.linkedin.com/in/arko",
-              "https://github.com/arko"
+              "https://github.com/arko",
             ],
-            "jobTitle": "Aspiring Aerospace Engineer",
-            "alumniOf": {
+            jobTitle: "Aspiring Aerospace Engineer",
+            alumniOf: {
               "@type": "EducationalOccupationalCredential",
-              "name": "MIT"
+              name: "MIT",
             },
-            "image": "https://i.imghippo.com/files/fsJm2995utk.jpeg",
-            "description": "Arko is a college student, dreamer, innovator, and aspiring aerospace engineer, committed to pushing the boundaries of the possible."
+            image: "https://i.imghippo.com/files/fsJm2995utk.jpeg",
+            description:
+              "Arko is a college student, dreamer, innovator, and aspiring aerospace engineer, committed to pushing the boundaries of the possible.",
           })}
         </script>
       </Helmet>
@@ -47,7 +67,7 @@ function AboutMe() {
         className="bg-black min-h-screen px-6 sm:px-2 py-12 md:px-20 lg:px-32 font-mont font-lightrelative bg-cover bg-fixed text-white p-5 md:p-10 lg:p-20 h-max"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1630694093867-4b947d812bf0?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('/mars.avif')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a]/5 via-black/50 to-gray-900/20 z-1"></div>
@@ -59,7 +79,10 @@ function AboutMe() {
               About <span className="text-white font-thin">Me</span>
             </h1>
             <p className="text-lg mt-4 text-white">
-              I'm <span className="text-white font-lightthin ">Arko</span>, a college student, dreamer, innovator, and aspiring aerospace engineer, committed to pushing the boundaries of the possible. Let's journey together into the Arkoverse!
+              I'm <span className="text-white font-lightthin ">Arko</span>, a
+              college student, dreamer, innovator, and aspiring aerospace
+              engineer, committed to pushing the boundaries of the possible.
+              Let's journey together into the Arkoverse!
             </p>
             <Link to="/projects">
               <button className="mt-8 px-6 py-3 bg-transparent text-white border-white border-[1px] hover:bg-white hover:text-black rounded-full font-medium shadow-lg transform hover:scale-110 transition duration-300">
@@ -100,8 +123,8 @@ function AboutMe() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center"> 
-          <div className="timeline md:w-2/3 w-full"> 
+        <div className="flex justify-center items-center">
+          <div className="timeline md:w-2/3 w-full">
             {timelineData.map((item, index) => (
               <div key={index} className="timeline-item ">
                 <div className="timeline-content transform hover:scale-105 transition duration-300 relative">
@@ -143,9 +166,12 @@ function AboutMe() {
         <div className="max-w-6xl mx-auto px-6 mt-10 relative">
           {/* Header Section */}
           <header className="text-center mb-10">
-            <h1 className="text-4xl font-light text-white font-mont">Arko's Resume</h1>
+            <h1 className="text-4xl font-light text-white font-mont">
+              Arko's Resume
+            </h1>
             <p className="mt-2 text-xl text-white">
-              Aspiring aerospace engineer, passionate about space exploration and AI technology.
+              Aspiring aerospace engineer, passionate about space exploration
+              and AI technology.
             </p>
           </header>
 
@@ -156,15 +182,27 @@ function AboutMe() {
               {/* Job 1 */}
               <div className="flex justify-between items-center">
                 <div>
-                  <h3 className="text-2xl font-light  text-white">Web Development & Student</h3>
-                  <p className="text-sm text-white">Freelancer | June 2023 - Present</p>
+                  <h3 className="text-2xl font-light  text-white">
+                    Web Development & Student
+                  </h3>
+                  <p className="text-sm text-white">
+                    Freelancer | June 2023 - Present
+                  </p>
                 </div>
                 <div className="text-sm text-gray-400">Remote</div>
               </div>
               <ul className="list-disc pl-6 mt-4">
-                <li>Developed and maintained web applications using React, JavaScript, and CSS</li>
-                <li>Collaborated on multiple freelance projects for various clients</li>
-                <li>Worked with APIs and data to create dynamic web applications</li>
+                <li>
+                  Developed and maintained web applications using React,
+                  JavaScript, and CSS
+                </li>
+                <li>
+                  Collaborated on multiple freelance projects for various
+                  clients
+                </li>
+                <li>
+                  Worked with APIs and data to create dynamic web applications
+                </li>
               </ul>
             </div>
           </section>
@@ -175,22 +213,36 @@ function AboutMe() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
                 <h3 className="text-lg font-thin">React</h3>
-                <p className="text-sm text-gray-400">Building dynamic web applications</p>
+                <p className="text-sm text-gray-400">
+                  Building dynamic web applications
+                </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
                 <h3 className="text-lg font-thin">Python</h3>
-                <p className="text-sm text-gray-400">Data science and automation scripts</p>
+                <p className="text-sm text-gray-400">
+                  Data science and automation scripts
+                </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:rotate-3">
                 <h3 className="text-lg font-thin">AI & Machine Learning</h3>
-                <p className="text-sm text-gray-400">AI-driven projects and problem-solving</p>
+                <p className="text-sm text-gray-400">
+                  AI-driven projects and problem-solving
+                </p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:-rotate-3">
                 <h3 className="text-lg font-thin">CubeSat Design</h3>
-                <p className="text-sm text-gray-400">Design and prototype CubeSats</p>
+                <p className="text-sm text-gray-400">
+                  Design and prototype CubeSats
+                </p>
               </div>
             </div>
           </section>
+          <div className="App">
+            <h1 className="text-center text-2xl font-bold my-5">
+              Educational Qualifications
+            </h1>
+            {/* <Table exams={exams} /> */}
+          </div>
         </div>
       </section>
     </>

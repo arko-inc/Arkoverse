@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center px-6 font-mont relative bg-cover bg-fixed" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1630694093867-4b947d812bf0?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      backgroundImage: "url('/mars.avif')",
     }}>
       <div className="absolute inset-0 bg-transparent z-1"></div>
 

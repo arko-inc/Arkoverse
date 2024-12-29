@@ -8,11 +8,11 @@ const AppWrapper = ({ children }) => {
 
   useEffect(() => {
     setIsLoading(true);
-    const timer = setTimeout(() => {
+    const loadingTimer = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(loadingTimer);
   }, [location]);
 
   if (isLoading) {
